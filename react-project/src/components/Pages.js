@@ -1,12 +1,9 @@
-import {useLocation, Link, Outlet} from "react-router-dom";
+import {useLocation, Link} from "react-router-dom";
 
 export const Home = () =>(
     <div>
         <h1>Home</h1>
         <p>Home, the first page</p>
-        <div>
-            <Outlet/>
-        </div>
         <nav>
             <ul>
                 <li><Link to="About">About</Link></li>
@@ -18,6 +15,11 @@ export const Home = () =>(
                 <li><Link to="Result">견적 페이지</Link></li>
             </ul>
         </nav>
+
+        <hr/>
+
+        <Form/>
+
     </div>
 );
 
