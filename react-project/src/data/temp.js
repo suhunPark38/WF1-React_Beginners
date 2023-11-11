@@ -1,4 +1,6 @@
 import React from "react";
+import sample from "../image/sample.png"
+import "./data.css"
 
 const products = [
     { name: 'Product1', price: 100 },
@@ -17,7 +19,8 @@ export const ProductsList = () => (
     <div>
         <ui>
             {products.map((products, index)=>(
-                <li key={index}>
+                <li className='product' key={index}>
+                    <img className='pro-icon' src={sample} alt="sample"/>
                     <strong>Name:</strong> {products.name}, <strong>Price:</strong> {products.price}
                 </li>
             ))}
