@@ -15,6 +15,7 @@ const products = [
     { name: 'Product10', price: 1000 }
 ];
 
+/*
 export const ProductsList = () => (
     <div>
         <ui>
@@ -26,4 +27,5 @@ export const ProductsList = () => (
             ))}
         </ui>
     </div>
-);
+)
+*/

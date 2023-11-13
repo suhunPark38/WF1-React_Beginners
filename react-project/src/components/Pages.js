@@ -1,5 +1,5 @@
 import {useLocation, Link} from "react-router-dom";
-import {ProductsList} from "../data/temp";
+import {ProductsList} from "../data/products";
 
 export const Home = () =>(
     <div>
