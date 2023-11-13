@@ -53,30 +53,28 @@ const ProductAccordion = () => {
                <option value="price">가격순</option>
                {/* 다른 정렬 기준에 대한 옵션 추가 */}
            </select>
-           <ul>
                {getSortedProducts()
                    .filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase())
                        && (selectedType === "" || product.type === selectedType))
                    .map((product, index) => (
-                       <li key={index}>
+
                            <Accordion expanded={expandedAccordion === index} onChange={() => handleProductClick(index)}>
                                <AccordionSummary
                                    expandIcon={<ExpandMoreIcon />}
                                    aria-controls={`panel${index + 1}-content`}
                                    id={`panel${index + 1}-header`}
                                >
-                                   <Typography>제품 정보</Typography>
+                                   <Typography><img className='pro-icon' src={sample} alt="sample" />
+                                       <strong>Type:</strong> {product.type}, <strong>Name:</strong> {product.name}, <strong>Price:</strong> {product.price} <strong>Manufacturer:</strong> {product.manufacturer}, <strong>Release:</strong> {product.release}</Typography>
                                </AccordionSummary>
                                <AccordionDetails>
                                    <div>
-                                       <img className='pro-icon' src={sample} alt="sample" />
-                                       <strong>Type:</strong> {product.type}, <strong>Name:</strong> {product.name}, <strong>Price:</strong> {product.price} <strong>Manufacturer:</strong> {product.manufacturer}, <strong>Release:</strong> {product.release}
+                                       <strong>Detail:</strong> {product.detail}
                                    </div>
                                </AccordionDetails>
                            </Accordion>
-                       </li>
+
                    ))}
-           </ul>
        </div>
     )
 }
