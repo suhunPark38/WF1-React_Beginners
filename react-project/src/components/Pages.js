@@ -27,7 +27,7 @@ export const Home = () =>(
 export const About = () => (
     <div>
         <h1>About</h1>
-        <p>About, introdicong page</p>
+        <p>About, introducing page</p>
     </div>
 );
 
