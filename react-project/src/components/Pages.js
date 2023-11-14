@@ -1,5 +1,5 @@
 import {useLocation, Link} from "react-router-dom";
-import {ProductsList} from "./ProductAccor";
+import ProductList from "./ProductList";
 
 export const Home = () =>(
     <div>
@@ -42,7 +42,7 @@ export const Introduce = () => (
     <div>
         <h1>부품 소개</h1>
         <p>page for 부품</p>
-        <ProductsList/>
+        <ProductList/>
     </div>
 );
 
