@@ -30,7 +30,11 @@ const ProductList = () => {
 
   const getSortedProducts = () => {
       let filteredProducts = [...products];
-
+  if (searchTerm) {
+        filteredProducts = filteredProducts.filter((product) =>
+            product.name.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+    }
       if (selectedType) {
           filteredProducts = filteredProducts.filter((product) => product.type === selectedType);
       }
