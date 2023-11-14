@@ -23,13 +23,13 @@ const SearchFilter = ({
         <InputLabel>제품 타입</InputLabel>
         <Select value={selectedType} onChange={onTypeChange}>
           <MenuItem value="">전체</MenuItem>
-          <MenuItem value="cpu">CPU</MenuItem>
-          <MenuItem value="motherboard">메인보드</MenuItem>
-          <MenuItem value="ram">램</MenuItem>
-          <MenuItem value="ssd">SSD</MenuItem>
-          <MenuItem value="power">파워</MenuItem>
-          <MenuItem value="case">케이스</MenuItem>
-          <MenuItem value="cooler">쿨러</MenuItem>
+          <MenuItem value="CPU">CPU</MenuItem>
+          <MenuItem value="메인보드">메인보드</MenuItem>
+          <MenuItem value="램">램</MenuItem>
+          <MenuItem value="SSD">SSD</MenuItem>
+          <MenuItem value="파워">파워</MenuItem>
+          <MenuItem value="케이스">케이스</MenuItem>
+          <MenuItem value="쿨러">쿨러</MenuItem>
           {/* 다른 제품 타입에 대한 옵션 추가 */}
         </Select>
       </FormControl>

@@ -1,5 +1,5 @@
 const products = [
-    { type: 'cpu', name: 'AMD 애슬론 3000G', performance:100, price: 50000, manufacturer:'AMD', release:'2019.12',
+    { type: 'CPU', name: 'AMD 애슬론 3000G', performance:100, price: 50000, manufacturer:'AMD', release:'2019.12',
     detail: `
                 AMD CPU종류        애슬론 APU        소켓 구분        AMD(소켓AM4)
                 세대 구분        1세대(Zen)        출시일        2019 4분기
@@ -143,7 +143,7 @@ const products = [
     GPU 장착        320mm        CPU쿨러 장착        155mm
     `},
 
-    { type: 'cpu', name: 'Ryzen 5 5600G', price: 150000, manufacturer:'Ryzen', release:'2021.08',
+    { type: 'CPU', name: 'Ryzen 5 5600G', price: 150000, manufacturer:'Ryzen', release:'2021.08',
     detail:`
     제조회사        AMD ( 제조사 웹사이트 바로가기)        등록년월        2021년 08월
     AMD CPU종류        라이젠5-4세대        소켓 구분        AMD(소켓AM4)
@@ -266,7 +266,7 @@ const products = [
     CPU쿨러 장착        160mm
     `},
 
-    { type: 'cpu', name: '인텔® 코어™ i3-13100 프로세서', price: 180000, manufacturer:'인텔', release:'2021.04',
+    { type: 'CPU', name: '인텔® 코어™ i3-13100 프로세서', price: 180000, manufacturer:'인텔', release:'2021.04',
     detail:`
     제조회사        인텔        등록년월        2023년 01월
     인텔 CPU종류        코어i3-13세대        소켓 구분        인텔(소켓1700)
@@ -372,7 +372,7 @@ const products = [
     가로        80mm        세로        22mm
     두께        2.38mm        무게        5.5g
     `},
-    { type: '파워', name: 'AONE 500MX V2', price: 1, manufacturer:'AONE', release:'2015.06',
+    { type: '파워', name: 'AONE 500MX V2', price: 20000, manufacturer:'AONE', release:'2015.06',
     detail:`
     제조회사        AONE        등록년월        2015년 06월
     제품 분류        ATX 파워        정격출력        200W
@@ -418,7 +418,7 @@ const products = [
 //사무용
 
 
-    { type: 'cpu', name: '인텔 코어i3-13세대 13100F (랩터레이크)', price: 149000, manufacturer:'인텔', release:'2023.01',
+    { type: 'CPU', name: '인텔 코어i3-13세대 13100F (랩터레이크)', price: 149000, manufacturer:'인텔', release:'2023.01',
     detail:`
     제조회사        인텔        등록년월        2023년 01월
     인텔 CPU종류        코어i3-13세대        소켓 구분        인텔(소켓1700)
@@ -627,7 +627,7 @@ const products = [
     PWM 지원        O
     `},
 
-    { type: 'cpu', name: 'AMD 라이젠5-4세대 5600X (버미어)', price: 190000, manufacturer:'AMD', release:'2020.11',
+    { type: 'CPU', name: 'AMD 라이젠5-4세대 5600X (버미어)', price: 190000, manufacturer:'AMD', release:'2020.11',
     detail:`
     제조회사        AMD        등록년월        2020년 11월
     AMD CPU종류        라이젠5-4세대        소켓 구분        AMD(소켓AM4)
@@ -844,7 +844,7 @@ const products = [
     PWM 지원        O
     `},
 
-    { type: 'cpu', name: '인텔 코어i5-13세대 13400F (랩터레이크)', price: 248000, manufacturer:'인텔', release:'2023.01',
+    { type: 'CPU', name: '인텔 코어i5-13세대 13400F (랩터레이크)', price: 248000, manufacturer:'인텔', release:'2023.01',
     detail:`
     제조회사        인텔        등록년월        2023년 01월
     인텔 CPU종류        코어i5-13세대        소켓 구분        인텔(소켓1700)
@@ -1066,7 +1066,7 @@ const products = [
     //일상용
 
 
-    { type: 'cpu', name: 'AMD 라이젠5-4세대 5600X', price: 190000, manufacturer:'amd', release:'2020.11',
+    { type: 'CPU', name: 'AMD 라이젠5-4세대 5600X', price: 190000, manufacturer:'amd', release:'2020.11',
     detail:`
     제조회사        AMD        등록년월        2020년 11월
     AMD CPU종류        라이젠5-4세대        소켓 구분        AMD(소켓AM4)
@@ -1292,7 +1292,7 @@ const products = [
     RGB FUSION        O        POLYCHROME        O
     `},
 
-    { type: 'cpu', name: '인텔 코어i7-14세대 14700K', price: 590000, manufacturer:'인텔', release:'2023.10',
+    { type: 'CPU', name: '인텔 코어i7-14세대 14700K', price: 590000, manufacturer:'인텔', release:'2023.10',
     detail:`
     제조회사        인텔        등록년월        2023년 10월
     인텔 CPU종류        코어i7-14세대        소켓 구분        인텔(소켓1700)
@@ -1520,7 +1520,7 @@ const products = [
     LED 라이트        O        PWM 지원        O
     `},
 
-    { type: 'cpu', name: '인텔 코어i9-14세대 14900K', price: 830000, manufacturer:'인텔', release:'2023.10',
+    { type: 'CPU', name: '인텔 코어i9-14세대 14900K', price: 830000, manufacturer:'인텔', release:'2023.10',
     detail:`제조회사        인텔        등록년월        2023년 10월
             인텔 CPU종류        코어i9-14세대        소켓 구분        인텔(소켓1700)
             출시일        2023 4분기        제조 공정        10nm(인텔7)
@@ -1758,7 +1758,7 @@ const products = [
 //고사양
 
 
-    { type: 'cpu', name: '인텔 코어 13세대 i9-13900KS', price: 1040000, manufacturer:'인텔', release:'2023.01.',
+    { type: 'CPU', name: '인텔 코어 13세대 i9-13900KS', price: 1040000, manufacturer:'인텔', release:'2023.01.',
     detail:`
     제조회사        인텔        등록년월        2023년 01월
     인텔 CPU종류        코어i9-13세대        소켓 구분        인텔(소켓1700)
@@ -2001,7 +2001,7 @@ const products = [
     AURA SYNC        O        제조사 소프트웨어        O
     `},
 
-    { type: 'cpu', name: '인텔 코어 14세대 i9-14900K', price: 1040000, manufacturer:'인텔', release:'2023.10.',
+    { type: 'CPU', name: '인텔 코어 14세대 i9-14900K', price: 1040000, manufacturer:'인텔', release:'2023.10.',
     detail:`
     제조회사        인텔        등록년월        2023년 10월
     인텔 CPU종류        코어i9-14세대        소켓 구분        인텔(소켓1700)
@@ -2241,7 +2241,7 @@ const products = [
     제조사 소프트웨어        O
     `},
 
-    { type: 'cpu', name: '라이젠9 5세대 라파엘 7950X3D', price: 965000, manufacturer:'AMD', release:'2023.02.',
+    { type: 'CPU', name: '라이젠9 5세대 라파엘 7950X3D', price: 965000, manufacturer:'AMD', release:'2023.02.',
     detail:`
     제조회사        AMD        등록년월        2023년 02월
     AMD CPU종류        라이젠9-5세대        소켓 구분        AMD(소켓AM5)
