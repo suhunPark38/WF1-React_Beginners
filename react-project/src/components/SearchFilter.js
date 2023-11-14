@@ -1,35 +1,55 @@
 import React from "react";
+import { TextField, Select, MenuItem, InputLabel, FormControl } from "@mui/material";
+import "../css/SearchFilter.css"; // 스타일시트를 import
 
-const SearchFilter = ({ searchTerm, onSearchChange, selectedType, onTypeChange, selectedSort, onSortChange }) => {
-    return (
-        <div>
-            <input type="text" placeholder="제품 검색" value={searchTerm} onChange={onSearchChange} />
+const SearchFilter = ({
+  searchTerm,
+  onSearchChange,
+  selectedType,
+  onTypeChange,
+  selectedSort,
+  onSortChange,
+}) => {
+  return (
+    <div>
+      <TextField
+        label="제품 검색"
+        placeholder="제품 검색"
+        value={searchTerm}
+        onChange={onSearchChange}
+      />
 
-            <select value={selectedType} onChange={onTypeChange}>
-                <option value="">전체</option>
-                <option value="cpu">CPU</option>
-                <option value="motherboard">메인보드</option>
-                <option value="ram">램</option>
-                <option value="ssd">SSD</option>
-                <option value="power">파워</option>
-                <option value="case">케이스</option>
-                <option value="cooler">쿨러</option>
-                {/* 다른 제품 타입에 대한 옵션 추가 */}
-            </select>
+      <FormControl className="searchFormControl"> {/* 클래스를 적용 */}
+        <InputLabel>제품 타입</InputLabel>
+        <Select value={selectedType} onChange={onTypeChange}>
+          <MenuItem value="">전체</MenuItem>
+          <MenuItem value="cpu">CPU</MenuItem>
+          <MenuItem value="motherboard">메인보드</MenuItem>
+          <MenuItem value="ram">램</MenuItem>
+          <MenuItem value="ssd">SSD</MenuItem>
+          <MenuItem value="power">파워</MenuItem>
+          <MenuItem value="case">케이스</MenuItem>
+          <MenuItem value="cooler">쿨러</MenuItem>
+          {/* 다른 제품 타입에 대한 옵션 추가 */}
+        </Select>
+      </FormControl>
 
-            <select value={selectedSort} onChange={onSortChange}>
-                <option value="priceHigh">높은 가격순</option>
-                <option value="priceLow">낮은 가격순</option>
-                <option value="performanceHigh">높은 성능순</option>
-                <option value="performanceLow">낮은 성능순</option>
-                <option value="nameAscending">이름 오름차순</option>
-                <option value="nameDescending">이름 내림차순</option>
-                <option value="releaseDate">출시순</option>
-                <option value="latest">최신순</option>
-                {/* 다른 정렬 기준에 대한 옵션 추가 */}
-            </select>
-        </div>
-    );
+      <FormControl className="sortFormControl"> {/* 클래스를 적용 */}
+        <InputLabel>정렬 기준</InputLabel>
+        <Select value={selectedSort || "priceHigh"} onChange={onSortChange}>
+          <MenuItem value="priceHigh">높은 가격순</MenuItem>
+          <MenuItem value="priceLow">낮은 가격순</MenuItem>
+          <MenuItem value="performanceHigh">높은 성능순</MenuItem>
+          <MenuItem value="performanceLow">낮은 성능순</MenuItem>
+          <MenuItem value="nameAscending">이름 오름차순</MenuItem>
+          <MenuItem value="nameDescending">이름 내림차순</MenuItem>
+          <MenuItem value="releaseDate">출시순</MenuItem>
+          <MenuItem value="latest">최신순</MenuItem>
+          {/* 다른 정렬 기준에 대한 옵션 추가 */}
+        </Select>
+      </FormControl>
+    </div>
+  );
 };
 
 export default SearchFilter;

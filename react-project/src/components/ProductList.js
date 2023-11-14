@@ -8,7 +8,7 @@ const ProductList = () => {
     const [expandedAccordion, setExpandedAccordion] = useState(null);
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedType, setSelectedType] = useState("");
-    const [selectedSort, setSelectedSort] = useState("price");
+    const [selectedSort, setSelectedSort] = useState("");
 
     const handleProductClick = (index) => {
         setExpandedAccordion((prevIndex) => (prevIndex === index ? null : index));
