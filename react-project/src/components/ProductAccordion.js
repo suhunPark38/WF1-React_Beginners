@@ -24,7 +24,13 @@ const ProductAccordion = ({ sortedProducts, expandedAccordion, onProductClick })
                     </AccordionSummary>
                     <AccordionDetails>
                         <div>
-                            <strong>Detail:</strong> {product.detail}
+                          <strong>Detail:</strong>
+                          {product.detail.split('\n').map((line, index) => (
+                            <React.Fragment key={index}>
+                              {line}
+                              <br />
+                            </React.Fragment>
+                          ))}
                         </div>
                     </AccordionDetails>
                 </Accordion>
