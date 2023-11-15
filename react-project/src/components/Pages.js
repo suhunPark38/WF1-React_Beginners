@@ -1,6 +1,6 @@
 import {useLocation, Link} from "react-router-dom";
 import ProductList from "./ProductList";
-
+import Carousel from './Carousel';
 export const Home = () =>(
     <div>
         <h1>Home</h1>
@@ -50,7 +50,7 @@ export const Result = () => (
     <div>
         <h1>견적</h1>
         <p>page for 견적</p>
-
+       <Carousel />
     </div>
 );
 
