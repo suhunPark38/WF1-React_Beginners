@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import sample from "../image/sam ple.png";
 import products from "../data/products";
 import "../css/data.css";
 
@@ -14,9 +13,9 @@ const ProductAccordion = ({ sortedProducts, expandedAccordion, onProductClick })
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls={`panel${index + 1}-content`}
                         id={`panel${index + 1}-header`}
-                    >
+                    >s
                         <Typography>
-                            <img className="pro-icon" src={sample} alt="sample" />
+                            <img className="pro-icon" src={process.env.PUBLIC_URL+product.image} alt={product.name} />
                             <strong>Type:</strong> {product.type}, <strong>Name:</strong> {product.name},{" "}
                             <strong>Price:</strong> {product.price} <strong>Manufacturer:</strong> {product.manufacturer},{" "}
                             <strong>Release:</strong> {product.release}
@@ -40,3 +39,7 @@ const ProductAccordion = ({ sortedProducts, expandedAccordion, onProductClick })
 };
 
 export default ProductAccordion;
+
+
+
+
