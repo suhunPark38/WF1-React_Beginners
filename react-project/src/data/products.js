@@ -387,7 +387,7 @@ const products = [
     보조전원        4핀 1개        PCIe 6핀        1개
     SATA        3개        IDE 4핀        3개
     `},
-    { type: '케이스', name: 'darkFlash DLM21 RGB MESH 강화유리', price: 1, manufacturer:'darkFlash', release:'2019.08',
+    { type: '케이스', name: 'darkFlash DLM21 RGB MESH 강화유리', price: 60000, manufacturer:'darkFlash', release:'2019.08',
     detail:`
     제조회사        darkFlash ( 제조사 웹사이트 바로가기)        등록년월        2019년 08월
     제품 분류        PC케이스(M-ATX)        케이스 크기        미니타워
