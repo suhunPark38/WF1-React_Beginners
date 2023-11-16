@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import products from "../data/products";
 import "../css/data.css";
 
 const ProductAccordion = ({ sortedProducts, expandedAccordion, onProductClick }) => {
@@ -17,7 +16,8 @@ const ProductAccordion = ({ sortedProducts, expandedAccordion, onProductClick })
                         <Typography>
                             <img className="pro-icon" src={process.env.PUBLIC_URL+product.image} alt={product.name} />
                             <strong>Type:</strong> {product.type}, <strong>Name:</strong> {product.name},{" "}
-                            <strong>Price:</strong> {product.price} <strong>Manufacturer:</strong> {product.manufacturer},{" "}
+                            <strong>Price:</strong> {product.price},{" "} <strong>Performance:</strong> {product.performance},{" "}
+                            <strong>Manufacturer:</strong> {product.manufacturer},{" "}
                             <strong>Release:</strong> {product.release}
                         </Typography>
                     </AccordionSummary>
