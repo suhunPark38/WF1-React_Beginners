@@ -9,6 +9,6 @@
 ## 실행환경 설명 및 실행 방법
 npm install
 
-npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 
-npm install @mui/icons-material
+npm install react-slick slick-carousel
