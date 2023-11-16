@@ -12,7 +12,7 @@ const ProductAccordion = ({ sortedProducts, expandedAccordion, onProductClick })
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls={`panel${index + 1}-content`}
                         id={`panel${index + 1}-header`}
-                    >s
+                    >
                         <Typography>
                             <img className="pro-icon" src={process.env.PUBLIC_URL+product.image} alt={product.name} />
                             <strong>Type:</strong> {product.type}, <strong>Name:</strong> {product.name},{" "}
