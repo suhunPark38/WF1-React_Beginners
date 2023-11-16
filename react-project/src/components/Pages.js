@@ -35,6 +35,7 @@ export const Form = () => (
   <div>
       <h1>설문조사</h1>
       <p>page for 설문조사</p>
+      <Carousel />
   </div>
 );
 
@@ -50,7 +51,7 @@ export const Result = () => (
     <div>
         <h1>견적</h1>
         <p>page for 견적</p>
-       <Carousel />
+
     </div>
 );
 
