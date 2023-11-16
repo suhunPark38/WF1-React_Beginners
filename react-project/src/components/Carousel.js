@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import products from "../data/products";
 import RenderRadioGroup from './RenderRadioGroup';
 import StepContent from './StepContent';
-
+import StepStepper from './StepStepper';
 import {
   Paper,
   Button,
@@ -20,9 +20,11 @@ import {
 
 const Carousel = () => {
 
+
+  const resetSelectedOptions = Array(8).fill('');
   const sliderRef = useRef(null);
   const [activeStep, setActiveStep] = useState(0);
-  const [selectedRadioGroups, setSelectedRadioGroups] = useState(Array(8).fill(''));
+  const [selectedRadioGroups, setSelectedRadioGroups] = useState(resetSelectedOptions);
   const [budgetSliderValue, setBudgetSliderValue] = useState(100);
   const [options, setOptions] = useState({
     Cpu: [],
@@ -40,7 +42,7 @@ const Carousel = () => {
       radioGroup: 'group1',
       options: ['사무용', '일상용', '게임용', '고사양', '일단 넘어갈게요.'],
     },
-    { name: '예산을 한정해주세요.', sliderLabel: '예산 선택', sliderValue: budgetSliderValue },
+    { name: '예산을 한정해주세요.', sliderValue: budgetSliderValue },
     { name: '선호하는 CPU를 골라주세요.', radioGroup: 'group2', options: options.Cpu },
     { name: '선호하는 메인보드를 골라주세요.', radioGroup: 'group3', options:  options.Motherboard },
     { name: '선호하는 램을 골라주세요.', radioGroup: 'group4', options: options.Ram },
@@ -49,7 +51,7 @@ const Carousel = () => {
     { name: '선호하는 케이스를 골라주세요.', radioGroup: 'group7', options: options.Case },
     { name: '선호하는 쿨러를 골라주세요.', radioGroup: 'group8', options: options.Cooler },
 
-    {name: '호환성 검사 중입니다.'},
+    {name: '호환성 검사 단계입니다.'},
     {name: '완성'},
   ];
 
@@ -79,6 +81,11 @@ const Carousel = () => {
 
     switch (group) {
       case 'group1':
+       //이게 필요한 이유 다시 앞으로 가서 사용 목적을 변경했을 때
+       //이전 선택한 라디오 버튼들을 지워버리기 위해서
+       //지우지 않으면 보이지 않는 라디오 버튼들에 의해서 선택하지 않고 다음이 진행될 수 있다.
+        setSelectedRadioGroups(resetSelectedOptions);
+
         setSelectedRadioGroups((prevGroups) => {
           const groups = [...prevGroups];
           groups[0] = selectedOption;
@@ -162,6 +169,7 @@ const handleGroup1Change = (selectedOption) => {
     default:
       maxPrice = 0;
   }
+
   setOptions((prevOptions) => ({
           ...prevOptions,
           Cpu: applyOptionsByType('CPU', maxPrice),
@@ -185,7 +193,7 @@ const applyOptionsByType = (setType, maxPrice) => {
           };
  // 다음 버튼이 활성화되어야 하는지 여부를 결정하는 함수
 const isNextButtonDisabled = () => {
-   if (activeStep===10) {
+   if (activeStep===11) {
         return true;
       }
   if (activeStep === 1 && selectedRadioGroups[activeStep - 1] === '') {
@@ -201,13 +209,7 @@ const isNextButtonDisabled = () => {
   return (
     <div>
       {/* 세로로 표시되는 스테퍼 */}
-      <Stepper activeStep={activeStep} orientation="vertical">
-        {items.map((item, index) => (
-          <Step key={index}>
-            <StepLabel>{item.name}</StepLabel>
-          </Step>
-            ))}
-      </Stepper>
+     <StepStepper activeStep={activeStep} items={items} />
 
       {/* 이미지 및 설명이 표시되는 슬라이더 */}
       <Slider ref={sliderRef} {...settings}>
@@ -226,7 +228,7 @@ const isNextButtonDisabled = () => {
         ))}
       </Slider>
 
-      <div style={{ textAlign: 'right', marginTop: '16px' }}>
+      <div style={{ textAlign: 'right', marginTop: '30px',marginRight: '40vh' }}>
         <Button
           onClick={() => handleSlideChange('prev')}
           variant="contained"
