@@ -1,22 +1,11 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState} from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import products from "../data/products";
-import RenderRadioGroup from './RenderRadioGroup';
 import StepContent from './StepContent';
 import StepStepper from './StepStepper';
-import {
-  Paper,
-  Button,
-  Typography,
-  Stepper,
-  Step,
-  StepLabel,
-  Radio,
-  RadioGroup,
-  FormControlLabel,
-} from '@mui/material';
+import {Button} from '@mui/material';
 
 const Carousel = () => {
 
@@ -40,7 +29,7 @@ const Carousel = () => {
     {
       name: '컴퓨터를 사용하는 목적이 무엇인가요?',
       radioGroup: 'group1',
-      options: ['사무용', '일상용', '게임용', '고사양', '일단 넘어갈게요.'],
+      options: ['사무용', '일상용', '게임용', '고사양'],
     },
     { name: '예산을 한정해주세요.', sliderValue: budgetSliderValue },
     { name: '선호하는 CPU를 골라주세요.', radioGroup: 'group2', options: options.Cpu },
@@ -78,76 +67,24 @@ const Carousel = () => {
 
   const handleRadioChange = (event, group) => {
     const selectedOption = event.target.value;
+    const groupIndex = parseInt(group.replace('group', ''), 10) - 1;
 
-    switch (group) {
-      case 'group1':
-       //이게 필요한 이유 다시 앞으로 가서 사용 목적을 변경했을 때
-       //이전 선택한 라디오 버튼들을 지워버리기 위해서
-       //지우지 않으면 보이지 않는 라디오 버튼들에 의해서 선택하지 않고 다음이 진행될 수 있다.
-        setSelectedRadioGroups(resetSelectedOptions);
+  if (group === 'group1') {
+    //이게 필요한 이유 다시 앞으로 가서 사용 목적을 변경했을 때
+    //이전 선택한 라디오 버튼들을 지워버리기 위해서
+    //지우지 않으면 보이지 않는 라디오 버튼들에 의해서 선택하지 않고 다음이 진행될 수 있다.
+     setSelectedRadioGroups(resetSelectedOptions);
+     handleGroup1Change(selectedOption); //용도에 따라 슬라이더 중간 값과 최대 가격(이걸 퍼포먼스로 수정하여)을 부여
+  }
 
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[0] = selectedOption;
-          return groups;
-        });
-        handleGroup1Change(selectedOption);
-        break;
-      case 'group2':
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[1] = selectedOption;
-          return groups;
-        });
-        break;
-      case 'group3':
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[2] = selectedOption;
-          return groups;
-        });
-        break;
-      case 'group4':
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[3] = selectedOption;
-          return groups;
-        });
-        break;
-      case 'group5':
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[4] = selectedOption;
-          return groups;
-        });
-        break;
-      case 'group6':
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[5] = selectedOption;
-          return groups;
-        });
-        break;
-      case 'group7':
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[6] = selectedOption;
-          return groups;
-        });
-        break;
-      case 'group8':
-        setSelectedRadioGroups((prevGroups) => {
-          const groups = [...prevGroups];
-          groups[7] = selectedOption;
-          return groups;
-        });
-        break;
-      default:
-        break;
-    }
+     setSelectedRadioGroups((prevGroups) => {
+        const groups = [...prevGroups];
+        groups[groupIndex] = selectedOption;
+        return groups;
+      });
      handleOptionChange(selectedOption);
   };
-const handleGroup1Change = (selectedOption) => {
+  const handleGroup1Change = (selectedOption) => {
     let maxPrice;
   switch (selectedOption) {
     case '사무용':
@@ -159,7 +96,7 @@ const handleGroup1Change = (selectedOption) => {
          maxPrice = 105000;
       break;
     case '게임용':
-      setBudgetSliderValue(195);
+      setBudgetSliderValue(190);
        maxPrice = 195000;
       break;
     case '고사양':
@@ -181,7 +118,7 @@ const handleGroup1Change = (selectedOption) => {
           Cooler: applyOptionsByType('쿨러', maxPrice),
         }));
 };
-const applyOptionsByType = (setType, maxPrice) => {
+  const applyOptionsByType = (setType, maxPrice) => {
   return products
     .filter((product) => product.type === setType && product.price <= maxPrice)
     .map((product) => product.name);
@@ -191,8 +128,9 @@ const applyOptionsByType = (setType, maxPrice) => {
             // 추가적인 로직을 수행할 수 있습니다.
             // 선택된 옵션에 따라 다른 동작을 수행하거나 상태를 업데이트할 수 있습니다.
           };
- // 다음 버튼이 활성화되어야 하는지 여부를 결정하는 함수
-const isNextButtonDisabled = () => {
+
+  // 다음 버튼이 활성화되어야 하는지 여부를 결정하는 함수
+  const isNextButtonDisabled = () => {
    if (activeStep===11) {
         return true;
       }
@@ -228,7 +166,7 @@ const isNextButtonDisabled = () => {
         ))}
       </Slider>
 
-      <div style={{ textAlign: 'right', marginTop: '30px',marginRight: '40vh' }}>
+      <div style={{ textAlign: 'right', marginTop: '30px',marginRight: '30vh' }}>
         <Button
           onClick={() => handleSlideChange('prev')}
           variant="contained"

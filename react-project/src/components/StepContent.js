@@ -11,37 +11,42 @@ const style = {
     padding: 30,
     textAlign: 'center',
     height: '50vh',// 화면 높이의 50%
+
     overflowY: 'scroll',
+  },
+  slider:{
+    width: '50%', // Adjust the width as needed
+    position: 'relative',
   },
 };
 
 const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadioChange, budgetSliderValue, setBudgetSliderValue }) => {
   const renderBudgetSlider = () => (
     <div>
-      <Typography variant="h6">예산 선택 (단위: 만원)</Typography>
+        <Typography variant="body2">{budgetSliderValue}</Typography>
       <input
         type="range"
         min={getBudgetRange('min', selectedRadioGroups[0])}
         max={getBudgetRange('max', selectedRadioGroups[0])}
-        step={10}
+        step={5}
         value={budgetSliderValue}
         onChange={(e) => setBudgetSliderValue(parseInt(e.target.value))}
+        style={style.slider}
       />
-      <Typography variant="body2">{budgetSliderValue}</Typography>
+      <Typography variant="h6">예산 선택 (단위: 만원)</Typography>
+
     </div>
   );
 
   const getBudgetRange = (type, purpose) => {
     const ranges = {
       'min': {
-        '일단 넘어갈게요.': 30,
         '사무용': 30,
         '일상용': 80,
         '게임용': 130,
         '고사양': 250,
       },
       'max': {
-        '일단 넘어갈게요.': 1000,
         '사무용': 80,
         '일상용': 130,
         '게임용': 250,

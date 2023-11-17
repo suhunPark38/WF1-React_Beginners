@@ -5,7 +5,8 @@ const style = {
   stepper: {
     padding: 16,
     textAlign: 'center',
-    height: 10,// 화면 높이의 20%
+    height: '20vh',
+    width: '20vh',
     float: 'right'
   },
 };

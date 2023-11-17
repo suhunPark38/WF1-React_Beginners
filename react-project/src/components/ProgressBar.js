@@ -20,9 +20,6 @@ useEffect(() => {
     }
   }, [activeStep]);
 
- // 외부에서 상태를 가져갈 수 있는 함수
-  const getShowProgressBar = () => showProgressBar;
-
 
   return (
     <>
