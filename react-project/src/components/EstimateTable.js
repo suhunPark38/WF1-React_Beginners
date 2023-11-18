@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ProductModal from "./ProductModal";
+import EstimateModal from "./EstimateModal";
 
 /*
 견적 페이지에 나타낼 태이블. 여러 종류의 부품을 기입하다보니 이름만으로 텍스트가 너무 길어져서 깔끔하게 하고자 테이블로 표시함
@@ -37,7 +38,7 @@ const EstimateTable = ()=> {
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
                             <TableCell component="th" scope="row">
-                                {row.type}
+                                {row.type}{EstimateModal(row.type)}
                             </TableCell>
                             <TableCell align="left">{row.cpu}{ProductModal(row.cpu)}</TableCell>
                             <TableCell align="left">{row.gpu}{ProductModal(row.gpu)}</TableCell>
