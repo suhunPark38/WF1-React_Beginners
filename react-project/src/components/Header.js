@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Tabs, Tab } from '@material-ui/core';
+import { AppBar, Tabs, Tab } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

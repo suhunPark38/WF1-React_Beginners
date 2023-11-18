@@ -1,10 +1,6 @@
-import {useLocation, Link} from "react-router-dom";
-import ProductList from "./ProductList";
+import {useLocation} from "react-router-dom";
 import Carousel from './Carousel';
-import EstimateTable from "./EstimateTable";
-
 import React from 'react';
-import { AppBar, Tabs, Tab } from '@material-ui/core';
 import Header from './Header';
 import "../css/Pages.css";
 
@@ -32,7 +28,6 @@ export const Form = () => {
   return (
     <div>
       <h1 className="title">컴퓨터 견적도우미 </h1>
-      <EstimateTable/>
     </div>
   );
 };

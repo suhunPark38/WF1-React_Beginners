@@ -30,10 +30,66 @@ const products = [
                 SenseMI           ○
             `, image: '/images/AMD 애슬론 3000g.png'},
 
-    { type: '메인보드', name: 'ASUS PRIME A320M-K', performance: 10 , price: 65000, manufacturer:'ASUS', release:'2017.05',
+    { type: '메인보드', name: 'ASUS PRIME A320M-K', performance: 10 , price: 65000, manufacturer:'ASUS', release:'2017.05', detail:
+            `
+    제조회사        ASUS PRIME        
+    등록년월        2017년 05월
+    기본 사양
+    제품 분류        AMD CPU용        
+    CPU 소켓         AMD(소켓AM4)
+    세부 칩셋        AMD A320        
+    CPU 장착수        1개
+    폼팩터        M-ATX (22.6x22.1cm)        
+    전원부        6페이즈
+    메모리
+    메모리 종류        DDR4        
+    메모리 속도        PC4-25600 (3,200MHz)(OC)
+    메모리 슬롯        2개        
+    메모리 채널        듀얼
+    메모리 용량        최대 32GB
+    PCIe버전
+    PCIe        ○
+    PCIe슬롯
+    PCIex16        1개        
+    PCIex1        2개
+    저장장치        
+    저장장치        M.2        1개
+    SATA3        4개
+    M.2 연결
+    PCIe        ○        
+    NVMe        ○
+    SATA        ○
+    M.2 폼팩터
+    2242        ○        
+    2260        ○
+    2280        ○
+    그래픽 출력
+    D-SUB        ○        
+    HDMI        ○
+    후면단자
+    USB 3.0        ○        
+    USB 2.0        ○
+    RJ-45        ○        
+    오디오잭        ○
+    PS/2        ○
+    USB 3.0        후면 4개 
+    USB 2.0        후면 2개
+    네트워크
+    유선랜 칩셋        Realtek RTL8111H        
+    유선랜 속도        기가비트
+    RJ-45        1개
+    오디오
+    오디오 칩셋        Realtek ALC887        
+    아날로그 출력        7.1채널(8ch)
+    특징
+    UEFI        ○
+    유통회사        대원CTS
+    `, image: '/images/ASUS PRIME A320M-K.png'},
 
     {type:'gpu', name:'내장 그래픽',performance: 10, price: 0, detail: 'cpu에 내장된 그래픽 카드입니다.' },
+
     {type: '쿨러', name:'기본 쿨러', performance: 10, price: 10, detail: '기본으로 제공되는 쿨러입니다.'},
+
     { type: '메인보드', name: 'ASUS PRIME A320M-K',performance:150 , price: 65000, manufacturer:'ASUS', release:'2017.05',
 
     detail:

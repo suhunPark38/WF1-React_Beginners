@@ -1,10 +1,7 @@
-
-import {useLocation, Link} from "react-router-dom";
 import ProductList from "./ProductList";
 
-import React, { useState } from 'react';
+import React from 'react';
 
-import { AppBar, Tabs, Tab } from '@material-ui/core';
 import Header from './Header';
 import "../css/Introduce.css";
 
