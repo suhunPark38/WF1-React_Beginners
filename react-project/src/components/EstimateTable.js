@@ -12,7 +12,6 @@ import EstimateModal from "./EstimateModal";
 
 /*
 견적 페이지에 나타낼 태이블. 여러 종류의 부품을 기입하다보니 이름만으로 텍스트가 너무 길어져서 깔끔하게 하고자 테이블로 표시함
-할 수 있다면 이미지 or 최종 가격 정도는 표시하면 좋을듯
  */
 const EstimateTable = ()=> {
     return(

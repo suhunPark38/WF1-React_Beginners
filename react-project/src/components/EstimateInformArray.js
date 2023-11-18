@@ -7,12 +7,13 @@ import React from "react";
 
 const EstimateInformArray= (estimate) => {
     let totalPrice = 0;
-
-
+    let totalPerformance = 0;
 
     return(
         <>
             <strong>견적 가격:</strong> {totalPrice}
+            <p></p>
+            <strong>견적 성능:</strong> {totalPerformance}
         </>
     )
 }
