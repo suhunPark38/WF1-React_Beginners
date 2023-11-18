@@ -1,4 +1,4 @@
-import estimates from "../data/Estimate";
+import Estimates from "../data/Estimate";
 import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import ProductModal from "./ProductModal";
 
 /*
 견적 페이지에 나타낼 태이블. 여러 종류의 부품을 기입하다보니 이름만으로 텍스트가 너무 길어져서 깔끔하게 하고자 테이블로 표시함
@@ -30,7 +31,7 @@ const EstimateTable = ()=> {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {estimates.map((row)=>(
+                    {Estimates.map((row)=>(
                         <TableRow
                             key={row.type}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -38,7 +39,7 @@ const EstimateTable = ()=> {
                             <TableCell component="th" scope="row">
                                 {row.type}
                             </TableCell>
-                            <TableCell align="right">{row.cpu}</TableCell>
+                            <TableCell align="right">{row.cpu}<ProductModal/></TableCell>
                             <TableCell align="right">{row.gpu}</TableCell>
                             <TableCell align="right">{row.board}</TableCell>
                             <TableCell align="right">{row.ram}</TableCell>
