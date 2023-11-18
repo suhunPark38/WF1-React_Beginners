@@ -1,45 +1,74 @@
 import React, { useState } from 'react';
 import Modal from "@mui/material/Modal";
-import { Paper } from '@mui/material';
+import { Paper, Button, Typography, Radio, RadioGroup, FormControlLabel } from '@mui/material';
 import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
-import { Radio, RadioGroup, FormControlLabel, Button } from '@mui/material';
+
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+  },
+  modalContainer: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
+  },
+  radioGroupContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+  },
+};
+
+const ModalContent = ({ content, onClose, getProductDetails }) => (
+  <div style={styles.modalContainer}>
+    <Paper>
+      <Typography variant="h2">안녕하세요!</Typography>
+      {content && <p>{content}</p>}
+      {content && <p>{getProductDetails(content)}</p>}
+      <Button onClick={onClose}>닫기</Button>
+    </Paper>
+  </div>
+);
 
 const RenderRadioGroup = (props) => {
   const { index, radioGroup, groupIndex, selectedRadioGroups, handleRadioChange, products } = props;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
-
-
-  const handleOpenModal = (option) => {
+  const handleToggleModal = (option) => {
     setModalContent(option);
-    setIsModalOpen(true);
+    setIsModalOpen((prev) => !prev);
   };
 
-  const handleCloseModal = () => {
-    setModalContent(null);
-    setIsModalOpen(false);
+  const getProductDetails = (productName) => {
+    const product = products.find((product) => product.name === productName);
+    return product ? product.detail : '세부 정보를 찾을 수 없습니다.';
   };
-const getProductDetails = (productName) => {
-  const product = products.find((product) => product.name === productName);
-  return product ? product.detail : '세부 정보를 찾을 수 없습니다.';
-};
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+    <div style={styles.container}>
       <RadioGroup
         name={`radioGroup${groupIndex}`}
         value={selectedRadioGroups[index - 2]}
         onChange={(e) => handleRadioChange(e, `group${groupIndex}`)}
       >
         {radioGroup.options.map((option, optionIndex) => (
-          <div key={optionIndex} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+          <div key={optionIndex} style={styles.radioGroupContainer}>
             <FormControlLabel
               value={option}
               control={<Radio />}
               label={option}
             />
             {groupIndex !== 1 && (
-              <Button key={optionIndex} onClick={() => handleOpenModal(option)}>
+              <Button key={optionIndex} onClick={() => handleToggleModal(option)}>
                 <ContentPasteSearchIcon />
               </Button>
             )}
@@ -47,19 +76,8 @@ const getProductDetails = (productName) => {
         ))}
       </RadioGroup>
 
-      <Modal open={isModalOpen} onClose={handleCloseModal}>
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, bgcolor: 'background.paper', boxShadow: 24, p: 4 }}>
-          <Paper>
-            <h2>안녕하세요!</h2>
-            {modalContent && (
-              <p>{modalContent}</p>
-               )}
-                {modalContent && (
-                      <p>{getProductDetails(modalContent)}</p>
-            )}
-            <Button onClick={handleCloseModal}>닫기</Button>
-          </Paper>
-        </div>
+      <Modal open={isModalOpen} onClose={handleToggleModal}>
+        <ModalContent content={modalContent} onClose={handleToggleModal} getProductDetails={getProductDetails} />
       </Modal>
     </div>
   );
