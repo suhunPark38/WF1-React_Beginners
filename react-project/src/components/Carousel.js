@@ -27,7 +27,9 @@ const Carousel = () => {
     Cooler: [],
   });
   const items = [
+
     { name: '컴퓨터 견적을 위해 도와드립니다.' },
+
     {
       name: '컴퓨터를 사용하는 목적이 무엇인가요?',
       radioGroup: 'group1',

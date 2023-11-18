@@ -1,6 +1,9 @@
 
 import {Route, Routes} from "react-router-dom";
-import {Home, About, Introduce, Result, Whoops404} from "./components/Pages";
+import {Home,  Whoops404} from "./components/Pages";
+import {About} from "./components/About";
+import {Introduce} from "./components/Introduce";
+import {Result} from "./components/Result";
 
 function App() {
 

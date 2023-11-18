@@ -2,60 +2,46 @@ import {useLocation, Link} from "react-router-dom";
 import ProductList from "./ProductList";
 import Carousel from './Carousel';
 import EstimateTable from "./EstimateTable";
-export const Home = () =>(
+
+import React from 'react';
+import { AppBar, Tabs, Tab } from '@material-ui/core';
+import Header from './Header';
+import "../css/Pages.css";
+
+export const Home = () => {
+  return (
+
+        <>
+          <Header />
+
+
+          <Form />
+          <div className="container">
+
+          <Carousel />
+          </div>
+          </>
+
+
+
+      );
+    };
+
+
+export const Form = () => {
+  return (
     <div>
-        <h1>Home</h1>
-        <p>Home, the first page</p>
-        <nav>
-            <ul>
-                <li><Link to="About">About</Link></li>
-            </ul>
-            <ul>
-                <li><Link to="Introduce">부품 페이지</Link></li>
-            </ul>
-            <ul>
-                <li><Link to="Result">견적 페이지</Link></li>
-            </ul>
-        </nav>
-
-        <hr/>
-
-        <Form/>
-
+      <h1 className="title">컴퓨터 견적도우미 </h1>
+      <EstimateTable/>
     </div>
-);
+  );
+};
 
-export const About = () => (
-    <div>
-        <h1>About</h1>
-        <p>About, introducing page</p>
 
-    </div>
-);
 
-export const Form = () => (
-  <div>
-      <h1>설문조사</h1>
-      <p>page for 설문조사</p>
-      <Carousel />
-  </div>
-);
 
-export const Introduce = () => (
-    <div>
-        <h1>부품 소개</h1>
-        <p>page for 부품</p>
-        <ProductList/>
-    </div>
-);
 
-export const Result = () => (
-    <div>
-        <h1>견적</h1>
-        <p>page for 견적</p>
-        <EstimateTable/>
-    </div>
-);
+
 
 export const Whoops404 = () => {
     let location = useLocation();
