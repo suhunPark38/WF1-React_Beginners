@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
+import ProductInformArray from "./ProductInformArray";
 import products from "../data/products";
 
 /*
@@ -22,10 +23,11 @@ const style = {
     p: 4,
 };
 
-const ProductModal = () => {
+const ProductModal = (productName) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
 
     return(
         <>
@@ -38,10 +40,12 @@ const ProductModal = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        1234
+                        {productName}
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        1234
+                        {
+                            ProductInformArray(products.find((product)=>(product.name === productName)))
+                        }
                     </Typography>
                     <Button onClick={handleClose}>Close</Button>
                 </Box>

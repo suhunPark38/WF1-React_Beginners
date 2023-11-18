@@ -39,14 +39,14 @@ const EstimateTable = ()=> {
                             <TableCell component="th" scope="row">
                                 {row.type}
                             </TableCell>
-                            <TableCell align="right">{row.cpu}<ProductModal/></TableCell>
-                            <TableCell align="right">{row.gpu}</TableCell>
-                            <TableCell align="right">{row.board}</TableCell>
-                            <TableCell align="right">{row.ram}</TableCell>
-                            <TableCell align="right">{row.ssd}</TableCell>
-                            <TableCell align="right">{row.power}</TableCell>
-                            <TableCell align="right">{row.fan}</TableCell>
-                            <TableCell align="right">{row.computerCase}</TableCell>
+                            <TableCell align="left">{row.cpu}{ProductModal(row.cpu)}</TableCell>
+                            <TableCell align="left">{row.gpu}{ProductModal(row.gpu)}</TableCell>
+                            <TableCell align="left">{row.board}{ProductModal(row.board)}</TableCell>
+                            <TableCell align="left">{row.ram}{ProductModal(row.ram)}</TableCell>
+                            <TableCell align="left">{row.ssd}{ProductModal(row.ssd)}</TableCell>
+                            <TableCell align="left">{row.power}{ProductModal(row.power)}</TableCell>
+                            <TableCell align="left">{row.fan}{ProductModal(row.fan)}</TableCell>
+                            <TableCell align="left">{row.computerCase}{ProductModal(row.computerCase)}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
