@@ -5,7 +5,7 @@ import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
 import { Radio, RadioGroup, FormControlLabel, Button } from '@mui/material';
 
 const RenderRadioGroup = (props) => {
-  const { index, radioGroup, groupIndex, selectedRadioGroups, handleRadioChange } = props;
+  const { index, radioGroup, groupIndex, selectedRadioGroups, handleRadioChange, products } = props;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
@@ -20,7 +20,10 @@ const RenderRadioGroup = (props) => {
     setModalContent(null);
     setIsModalOpen(false);
   };
-
+const getProductDetails = (productName) => {
+  const product = products.find((product) => product.name === productName);
+  return product ? product.detail : '세부 정보를 찾을 수 없습니다.';
+};
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
       <RadioGroup
@@ -50,6 +53,9 @@ const RenderRadioGroup = (props) => {
             <h2>안녕하세요!</h2>
             {modalContent && (
               <p>{modalContent}</p>
+               )}
+                {modalContent && (
+                      <p>{getProductDetails(modalContent)}</p>
             )}
             <Button onClick={handleCloseModal}>닫기</Button>
           </Paper>
