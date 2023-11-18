@@ -20,14 +20,14 @@ const EstimateTable = ()=> {
                 <TableHead>
                     <TableRow>
                         <TableCell>견적 종류</TableCell>
-                        <TableCell align="right">cpu</TableCell>
-                        <TableCell align="right">gpu</TableCell>
-                        <TableCell align="right">메인보드</TableCell>
-                        <TableCell align="right">램</TableCell>
-                        <TableCell align="right">SSD</TableCell>
-                        <TableCell align="right">파워</TableCell>
-                        <TableCell align="right">팬</TableCell>
-                        <TableCell align="right">케이스</TableCell>
+                        <TableCell align="center">cpu</TableCell>
+                        <TableCell align="center">gpu</TableCell>
+                        <TableCell align="center">메인보드</TableCell>
+                        <TableCell align="center">램</TableCell>
+                        <TableCell align="center">SSD</TableCell>
+                        <TableCell align="center">파워</TableCell>
+                        <TableCell align="center">팬</TableCell>
+                        <TableCell align="center">케이스</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
