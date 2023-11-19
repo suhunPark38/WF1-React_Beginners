@@ -86,9 +86,9 @@ const products = [
     유통회사        대원CTS
     `, image: '/images/ASUS PRIME A320M-K.png'},
 
-    {type:'gpu', name:'내장 그래픽',performance: 10, price: 0, detail: 'cpu에 내장된 그래픽 카드입니다.' },
+    {type:'gpu', name:'내장 그래픽',performance: 10, price: 0, detail: 'cpu에 내장된 그래픽 카드입니다.',image: '/images/내장 그래픽.jpg' },
 
-    {type: '쿨러', name:'기본 쿨러', performance: 10, price: 10, detail: '기본으로 제공되는 쿨러입니다.'},
+    {type: '쿨러', name:'기본 쿨러', performance: 10, price: 10, detail: '기본으로 제공되는 쿨러입니다.',image: '/images/기본 쿨러.jpg'},
 
     { type: '메인보드', name: 'ASUS PRIME A320M-K',performance:150 , price: 65000, manufacturer:'ASUS', release:'2017.05',
 
