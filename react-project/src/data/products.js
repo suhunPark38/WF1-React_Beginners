@@ -4595,6 +4595,207 @@ const products = [
     팬 가로(길이)	230.7mm
     두께	42mm`, image: '/images/COLORFUL 지포스 GTX 1650 토마호크 V2 D6 4GB.jpg'},
     //그래픽 카드 추가
+ { type: 'SSD', name: '삼성전자 PM9A1 M.2 NVMe 병행수입 (512GB)', performance:40 , price: 67000, manufacturer:'삼성전자', release:'2021.02.',
+    detail:`
+제조회사	삼성전자
+등록년월	2021년 02월
+[기본사양]
+제품분류	내장형SSD
+폼팩터	M.2 (2280)
+인터페이스	PCIe4.0x4 (64GT/s)
+프로토콜		NVMe 1.3
+용량	512GB
+메모리 타입	TLC(기타)
+낸드 구조		3D낸드
+RAM 탑재	DRAM 탑재
+RAM 타입	DDR4 512MB
+컨트롤러	삼성
+게임기 호환	PS5 호환
+TBW		300TB
+[성능]
+순차읽기	6,900MB/s
+순차쓰기	5,000MB/s
+읽기IOPS	800K
+쓰기IOPS	800K
+지원기능
+TRIM	O
+SLC캐싱	O
+S.M.A.R.T	O
+부가기능
+AES 암호화	O
+[환경특성]
+MTBF	150만시간
+쿨링 정보
+NVMe 방열판	방열판 미포함
+[크기/무게]
+가로	80mm
+세로	22mm
+두께	2.38mm
+무게	9g
+    `, image: '/images/삼성전자 PM9A1 M.2 NVMe 병행수입 (512GB).jpg'},
+{type: 'SSD', name: '삼성전자 PM9A1 M.2 NVMe 병행수입 (2TB)', performance:80, price: 226000, manufacturer:'삼성전자', release:'2021.02.',
+detail:`
+제조회사	삼성전자
+등록년월	2021년 02월
+[기본사양]
+제품분류	내장형SSD
+폼팩터	M.2 (2280)
+인터페이스	PCIe4.0x4 (64GT/s)
+프로토콜		NVMe 1.3
+용량	2TB
+메모리 타입	TLC(기타)
+낸드 구조	3D낸드
+RAM 탑재	DRAM 탑재
+RAM 타입	DDR4 2GB
+컨트롤러	삼성
+게임기 호환	PS5 호환
+TBW	1,200TB
+[성능]
+순차읽기	7,000MB/s
+순차쓰기	5,200MB/s
+읽기IOPS	1,000K
+쓰기IOPS	850K
+지원기능
+TRIM		O
+SLC캐싱		O
+S.M.A.R.T		O
+부가기능
+AES 암호화	O
+[환경특성]
+MTBF	150만시간
+쿨링 정보
+NVMe 방열판	방열판 미포함
+[크기/무게]
+가로	80mm
+세로	22mm
+두께	2.38mm
+무게	9g
+`, image: '/images/삼성전자 PM9A1 M.2 NVMe 병행수입 (2TB).jpg'},
+{type:'SSD', name: 'SK하이닉스 Gold P31 M.2 NVMe (2TB)', performance:75, price: 197000, manfacturer:'SK하이닉스', release:'2021.08',
+detail:`
+제조회사	SK하이닉스
+등록년월	2021년 08월
+[기본사양]
+제품분류	내장형SSD
+폼팩터	M.2 (2280)
+인터페이스	PCIe3.0x4 (32GT/s)
+프로토콜	NVMe 1.3
+용량	2TB
+메모리 타입	TLC(기타)
+낸드 구조	3D낸드
+RAM 탑재	DRAM 탑재
+RAM 타입	DDR4
+컨트롤러	SK hynix Cepheus
+[성능]
+순차읽기	3,500MB/s
+순차쓰기	3,200MB/s
+읽기IOPS	570K	쓰기IOPS	600K
+지원기능
+TRIM	O
+SLC캐싱	O
+S.M.A.R.T	O
+부가기능
+전용 S/W	O
+[환경특성]
+MTBF	150만시간
+TBW	1,200TB
+A/S기간
+5년	O
+제한보증	O
+쿨링 정보
+NVMe 방열판	방열판 미포함
+[크기/무게]
+가로	80mm
+세로	22mm
+두께	2.3mm
+무게	7g
+`, image: '/images/SK하이닉스 Gold P31 M.2 NVMe (2TB).jpg'},
+{type:'SSD', name:'키오시아 EXCERIA G2 M.2 NVMe (2TB)', performance:70, price:175000, manufacturer:'키오시아', release:'2022.11',
+detail:`
+제조회사	키오시아
+등록년월	2022년 11월
+[기본사양]
+제품분류	내장형SSD
+폼팩터	M.2 (2280)
+인터페이스	PCIe3.0x4 (32GT/s)
+프로토콜	NVMe 1.3
+용량	2TB
+메모리 타입	TLC(기타)
+낸드 구조	3D낸드
+RAM 탑재	DRAM 탑재
+RAM 타입	확인요망
+컨트롤러		KIOXIA
+[성능]
+순차읽기	2,100MB/s
+순차쓰기	1,700MB/s
+읽기IOPS	360K
+쓰기IOPS	400K
+지원기능
+TRIM	O
+GC	O
+S.M.A.R.T	O
+ECC	O
+부가기능
+전용 S/W	O
+소프트웨어 지원
+관리기능	O
+[환경특성]
+MTBF	150만시간
+TBW	800TB
+A/S기간
+5년	O
+제한보증	O
+쿨링 정보
+NVMe 방열판	방열판 미포함
+[크기/무게]
+가로	80.15mm
+세로	22.15mm
+두께	2.23mm
+무게	7.1g
+`, image:  '/images/키오시아 EXCERIA G2 M.2 NVMe (2TB).jpg'},
+{type:'SSD', name:'삼성전자 980 PRO M.2 NVMe (2TB)', performance:85, price:276000, manufacturer:'삼성전자', release:'2021.03',
+detail:`
+제품분류	내장형SSD
+폼팩터	M.2 (2280)
+인터페이스 PCIe4.0x4 (64GT/s)
+프로토콜	NVMe 1.3c
+용량	2TB
+메모리 타입	TLC(기타)
+낸드 구조	3D낸드
+RAM 탑재	DRAM 탑재
+RAM 타입	DDR4 2GB
+컨트롤러	삼성
+게임기 호환	PS5 호환
+TBW	1,200TB
+[성능]
+순차읽기	7,000MB/s
+순차쓰기	5,100MB/s
+읽기IOPS	1,000K
+쓰기IOPS	1,000K
+지원기능
+TRIM	O
+GC	O
+SLC캐싱	O
+S.M.A.R.T	O
+DEVSLP	O
+부가기능
+AES 암호화	O
+전용 S/W	O
+소프트웨어 지원
+마이그레이션	O
+관리기능	O
+[환경특성]
+MTBF	150만시간
+A/S기간
+5년	O
+쿨링 정보
+NVMe 방열판	방열판 미포함
+[크기/무게]
+가로	80.15mm
+세로	22.15mm
+두께	2.38mm
+무게	9g
+`, image:  '/images/삼성전자 980 PRO M.2 NVMe (2TB).jpg'},
 
 ];
 

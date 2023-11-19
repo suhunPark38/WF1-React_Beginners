@@ -138,13 +138,13 @@ const Carousel = () => {
 
   // 다음 버튼이 활성화되어야 하는지 여부를 결정하는 함수
   const isNextButtonDisabled = () => {
-   if (activeStep===11) {
+   if (activeStep===12) {
         return true;
       }
   if (activeStep === 1 && selectedRadioGroups[activeStep - 1] === '') {
     return true;
   }
-  if ((activeStep >= 3 && activeStep <= 10) && selectedRadioGroups[activeStep - 2] === '') {
+  if ((activeStep >= 3 && activeStep <= 11) && selectedRadioGroups[activeStep - 2] === '') {
     return true;
   }
   return false;
