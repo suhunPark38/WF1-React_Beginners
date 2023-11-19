@@ -161,19 +161,18 @@ const products = [
     유통회사        대원CTS
 
     `, image: '/images/ASUS PRIME A320M-K.png'},
-    { type: '램', name: '삼성전자 노트북 DDR4-3200 (4GB)',performance: 15 , price: 15000, manufacturer:'삼성전자', release:'2021.08',
+    { type: '램', name: '삼성전자 DDR4-3200 (4GB)',performance: 15 , price: 15000, manufacturer:'삼성전자', release:'2021.08',
     detail:
     `
     제조회사        삼성전자        
-    등록년월        2021년 08월
-    사용 장치        노트북용        
+    등록년월        2021년 08월        
     제품 분류        DDR4
     메모리 규격        SO-DIMM        
     메모리 용량        4GB
     동작클럭(대역폭)        3200MHz (PC4-25600)        
     램개수        1개
     히트싱크        미포함
-    `, image: '/images/삼성전자 노트북 DDR4-3200 (4GB).jpg'},
+    `, image: '/images/삼성전자 DDR4-3200 (4GB).jpg'},
     { type: 'SSD', name: '삼성전자 PM9A1 M.2 NVMe (256GB)', performance: 15, price: 25000, manufacturer:'삼성전자', release:'2021.02',
     detail:`
     제조회사        삼성전자       
