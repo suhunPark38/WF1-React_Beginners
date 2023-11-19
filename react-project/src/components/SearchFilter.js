@@ -24,6 +24,7 @@ const SearchFilter = ({
         <Select value={selectedType} onChange={onTypeChange}>
           <MenuItem value="">전체</MenuItem>
           <MenuItem value="CPU">CPU</MenuItem>
+          <MenuItem value="gpu">GPU</MenuItem>
           <MenuItem value="메인보드">메인보드</MenuItem>
           <MenuItem value="램">램</MenuItem>
           <MenuItem value="SSD">SSD</MenuItem>

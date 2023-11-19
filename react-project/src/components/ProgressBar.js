@@ -10,7 +10,7 @@ useEffect(() => {
     setShowProgressBar(true); // 프로세스 바 보이기
     setSuccessMessage(false); // 성공 메시지 초기화
 
-    if (activeStep === 10) {
+    if (activeStep === 11) {
       const timer = setTimeout(() => {
          setShowProgressBar(false); // 프로세스 바 숨기기
          setSuccessMessage(true); // 성공 메시지 보이기

@@ -12,13 +12,14 @@ import {Button} from '@mui/material';
 const Carousel = () => {
 
 
-  const resetSelectedOptions = Array(8).fill('');
+  const resetSelectedOptions = Array(9).fill('');
   const sliderRef = useRef(null);
   const [activeStep, setActiveStep] = useState(0);
   const [selectedRadioGroups, setSelectedRadioGroups] = useState(resetSelectedOptions);
   const [budgetSliderValue, setBudgetSliderValue] = useState(100);
   const [options, setOptions] = useState({
     Cpu: [],
+    Gpu: [],
     Motherboard: [],
     Ram: [],
     SSD: [],
@@ -37,12 +38,13 @@ const Carousel = () => {
     },
     { name: '예산을 한정해주세요.', sliderValue: budgetSliderValue },
     { name: '선호하는 CPU를 골라주세요.', radioGroup: 'group2', options: options.Cpu },
-    { name: '선호하는 메인보드를 골라주세요.', radioGroup: 'group3', options:  options.Motherboard },
-    { name: '선호하는 램을 골라주세요.', radioGroup: 'group4', options: options.Ram },
-    { name: '선호하는 SSD를 골라주세요.', radioGroup: 'group5', options: options.SSD },
-    { name: '선호하는 파워를 골라주세요.', radioGroup: 'group6', options: options.Power },
-    { name: '선호하는 케이스를 골라주세요.', radioGroup: 'group7', options: options.Case },
-    { name: '선호하는 쿨러를 골라주세요.', radioGroup: 'group8', options: options.Cooler },
+    { name: '선호하는 GPU를 골라주세요.', radioGroup: 'group3', options: options.Gpu },
+    { name: '선호하는 메인보드를 골라주세요.', radioGroup: 'group4', options:  options.Motherboard },
+    { name: '선호하는 램을 골라주세요.', radioGroup: 'group5', options: options.Ram },
+    { name: '선호하는 SSD를 골라주세요.', radioGroup: 'group6', options: options.SSD },
+    { name: '선호하는 파워를 골라주세요.', radioGroup: 'group7', options: options.Power },
+    { name: '선호하는 케이스를 골라주세요.', radioGroup: 'group8', options: options.Case },
+    { name: '선호하는 쿨러를 골라주세요.', radioGroup: 'group9', options: options.Cooler },
 
     {name: '호환성 검사 단계입니다.'},
     {name: '완성'},
@@ -71,7 +73,7 @@ const Carousel = () => {
 
   const handleRadioChange = (event, group) => {
     const selectedOption = event.target.value;
-    const groupIndex = parseInt(group.replace('group', ''), 10) - 1;
+    const groupIndex = parseInt(group.replace('group', ''), 11) - 1;
 
   if (group === 'group1') {
     //이게 필요한 이유 다시 앞으로 가서 사용 목적을 변경했을 때
@@ -114,6 +116,7 @@ const Carousel = () => {
   setOptions((prevOptions) => ({
           ...prevOptions,
           Cpu: applyOptionsByType('CPU', maxPrice),
+          Gpu: applyOptionsByType('gpu', maxPrice),
           Motherboard: applyOptionsByType('메인보드', maxPrice),
           Ram: applyOptionsByType('램', maxPrice),
           SSD: applyOptionsByType('SSD', maxPrice),
@@ -141,7 +144,7 @@ const Carousel = () => {
   if (activeStep === 1 && selectedRadioGroups[activeStep - 1] === '') {
     return true;
   }
-  if ((activeStep >= 3 && activeStep <= 9) && selectedRadioGroups[activeStep - 2] === '') {
+  if ((activeStep >= 3 && activeStep <= 10) && selectedRadioGroups[activeStep - 2] === '') {
     return true;
   }
   return false;
