@@ -4796,6 +4796,54 @@ NVMe 방열판	방열판 미포함
 두께	2.38mm
 무게	9g
 `, image:  '/images/삼성전자 980 PRO M.2 NVMe (2TB).jpg'},
+{type:'램', name:'삼성전자 DDR4-3200 (32GB) x 2', performance:100, price:176000, manufacturer:'삼성전자', release:'2020.04',
+detail:`
+제조회사	삼성전자
+등록년월	2020년 04월
+사용 장치	데스크탑용
+제품 분류	DDR4
+메모리 규격	DIMM
+메모리 용량	32GB
+동작클럭(대역폭)	3200MHz (PC4-25600)
+램개수	1개
+히트싱크	미포함
+`, image:  '/images/삼성전자 DDR4-3200 (32GB) x 2.jpg'},
+{type:'램', name:'마이크론 Crucial DDR5-5600 CL46 PRO 패키지 아스크텍 (64GB(32Gx2))', performance:200, price:300000, manufacturer:'마이크론', release:'2023.10',
+detail:`
+제조회사	마이크론
+등록년월	2023년 10월
+사용 장치	데스크탑용
+제품 분류	DDR5
+메모리 규격	UDIMM
+메모리 용량	64GB
+동작클럭(대역폭)	5600MHz (PC5-44800)
+램타이밍	CL46-45-45
+동작전압	1.10V
+램개수	2개
+히트싱크	방열판
+방열판 색상	블랙
+부가기능
+XMP3.0		O
+EXPO		O
+온다이ECC 	O
+`, image:  '/images/마이크론 Crucial DDR5-5600 CL46 PRO 패키지 아스크텍 (64GB(32Gx2)).jpg'},
+{type:'램', name:'마이크론 Crucial DDR4-3200 CL22 (16GB) x 2', performance:60, price:94000, manufacturer:'마이크론', release:'2020.01',
+detail:`
+제조회사	삼성전자
+상품 상세 스펙
+상품 상세 정보 제공
+제조회사	마이크론
+등록년월	2020년 01월
+사용 장치	데스크탑용
+제품 분류	DDR4
+메모리 규격	DIMM
+메모리 용량	16GB
+동작클럭(대역폭)	3200MHz (PC4-25600)
+램타이밍	CL22
+동작전압	1.20V
+램개수	1개
+히트싱크	미포함
+`, image:  '/images/마이크론 Crucial DDR4-3200 CL22 (16GB) x 2.jpg'},
 
 ];
 
