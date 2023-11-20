@@ -68,7 +68,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
     <Paper>
     <div className="paper">
       <Typography variant="h4">{item.name}</Typography>
-      {(index === 1 || (index >= 3 && index <= 9)) && (
+      {(index === 1 || (index >= 3 && index <= 10)) && (
         <RenderRadioGroup
           index={index}
           radioGroup={item}
@@ -79,10 +79,9 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
         />
       )}
       {index === 2 && renderBudgetSlider()}
-      {index === 10 && renderProgressBar()}
-      {index === 11 && renderSelectedValues()}
-      </div>
-      </Paper>
+      {index === 11 && renderProgressBar()}
+      {index === 12 && renderSelectedValues()}
+    </Paper>
 
   );
 };

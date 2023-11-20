@@ -8,7 +8,8 @@ const ProductList = () => {
     const [expandedAccordion, setExpandedAccordion] = useState(null);
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedType, setSelectedType] = useState("");
-    const [selectedSort, setSelectedSort] = useState("");
+    const [selectedSort, setSelectedSort] = useState("priceHigh"); //정렬 기준은 반드시 하나가 선택되어 있어야 함
+    //그렇지 않으면 제일 위에 정렬 기준이 선택되지만 default 값을 넘겨주기 때문에
 
     const handleProductClick = (index) => {
         setExpandedAccordion((prevIndex) => (prevIndex === index ? null : index));
