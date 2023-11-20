@@ -7,6 +7,8 @@ import StepContent from './StepContent';
 import StepStepper from './StepStepper';
 import {Button} from '@mui/material';
 
+import "../css/carousel.css";
+
 
 
 const Carousel = () => {
@@ -173,7 +175,7 @@ const Carousel = () => {
         ))}
       </Slider>
 
-      <div style={{ textAlign: 'right', marginTop: '30px',marginRight: '30vh' }}>
+      <div className="Button">
         <Button
           onClick={() => handleSlideChange('prev')}
           variant="contained"
