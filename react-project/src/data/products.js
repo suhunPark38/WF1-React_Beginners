@@ -356,7 +356,7 @@ const products = [
     USB단자        USB3.2 Gen1(4개), USB2.0(2개)
     사운드칩셋        Realtek
     `, image: '/images/GiGABYTE A520M K V2.png'},
-    { type: '램', name: '마이크론 Crucial DDR4-3200 CL22 (8GB) x 2', performance: 30, price: 50000, manufacturer:'마이크론', release:'2020.01',
+    { type: '램', name: '마이크론 Crucial DDR4-3200 CL22 (8GB) x 2', performance: 50, price: 50000, manufacturer:'마이크론', release:'2020.01',
     detail:`
     제조회사        마이크론
     사용 장치        데스크탑용
@@ -368,7 +368,7 @@ const products = [
     동작전압        1.20V        램개수        1개
     히트싱크        미포함
     `, image: '/images/마이크론 Crucial DDR4-3200 CL22 (8GB) x 2.jpg'},
-    { type: 'SSD', name: 'SSD 512GB ESSENCORE KLEVV C710 NVMe', performance: 30, price: 60000, manufacturer:'ESSENCORE', release:'2020.03',
+    { type: 'SSD', name: 'SSD 512GB ESSENCORE KLEVV C710 NVMe', performance: 50, price: 60000, manufacturer:'ESSENCORE', release:'2020.03',
     detail:`
     제조회사        ESSENCORE       
     등록년월        2020년 03월
@@ -409,7 +409,7 @@ const products = [
     두께        2.2mm        
     무게        7g
     `, image: '/images/SSD 512GB ESSENCORE KLEVV C710 NVMe.jpg'},
-    { type: '파워', name: '잘만 ECOMAX 83+', performance: 20, price: 40000, manufacturer:'잘만', release:'2018.06',
+    { type: '파워', name: '잘만 ECOMAX 83+', performance: 50, price: 40000, manufacturer:'잘만', release:'2018.06',
     detail:`
     제조회사        잘만        
     등록년월        2018년 06월
@@ -614,7 +614,7 @@ const products = [
     특징
     UEFI        ○
     `, image: '/images/ASUS PRIME H610M-K D4 인텍앤컴퍼니.jpg'},
-    { type: '램', name: '삼성전자 DDR4-3200 (8GB) x2', performance: 30, price: 40000, manufacturer:'삼성전자', release:'2020.06',
+    { type: '램', name: '삼성전자 DDR4-3200 (8GB) x2', performance: 50, price: 40000, manufacturer:'삼성전자', release:'2020.06',
     detail:`
     제조회사        삼성전자         
     등록년월        2020년 06월
@@ -626,7 +626,7 @@ const products = [
     램개수        1개
     히트싱크        미포함
     `, image: '/images/삼성전자 DDR4-3200 (8GB) x2.jpg'},
-    { type: 'SSD', name: 'Western Digital WD BLACK SN770 M.2 NVMe (500GB)', performance: 30, price: 50000, manufacturer:'Western', release:'2022.03',
+    { type: 'SSD', name: 'Western Digital WD BLACK SN770 M.2 NVMe (500GB)', performance: 45, price: 50000, manufacturer:'Western', release:'2022.03',
     detail:`
     제조회사        Western Digital        
     등록년월        2022년 03월
@@ -667,7 +667,7 @@ const products = [
     가로        80mm        세로        22mm
     두께        2.38mm        무게        5.5g
     `, image: '/images/Western Digital WD BLACK SN770 M.2 NVMe (500GB).jpg'},
-    { type: '파워', name: 'AONE 500MX V2', performance: 30, price: 20000, manufacturer:'AONE', release:'2015.06',
+    { type: '파워', name: 'AONE 500MX V2', performance: 40, price: 20000, manufacturer:'AONE', release:'2015.06',
     detail:`
     제조회사        AONE        
     등록년월        2015년 06월
@@ -832,7 +832,7 @@ const products = [
     추가 구성
     백플레이트        O
     `, image: '/images/MSI 지포스 RTX 3050 벤투스 2X XS OC D6 8GB.jpg'},
-    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 37, price: 97000, manufacturer:'ASUS', release:'2022.01',
+    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 50, price: 97000, manufacturer:'ASUS', release:'2022.01',
     detail:`
     제조회사        ASUS        
     등록년월        2022년 01월
@@ -918,7 +918,7 @@ const products = [
     특징
     UEFI        O
     `, image: '/images/ASUS PRIME H610M-K D4 인텍앤컴퍼니.jpg'},
-    { type: 'SSD', name: '삼성전자 PM9A1 M.2 NVMe 병행수입 (1TB)', performance: 60, price: 110000, manufacturer:'삼성전자', release:'2021.02',
+    { type: 'SSD', name: '삼성전자 PM9A1 M.2 NVMe 병행수입 (1TB)', performance: 100, price: 110000, manufacturer:'삼성전자', release:'2021.02',
     detail:`
     제조회사        삼성전자        
     등록년월        2021년 02월
@@ -1061,7 +1061,7 @@ const products = [
     라디에이터(전면)        최대240mm
     라디에이터(후면)        최대120mm
             `, image: '/images/3RSYS R200 (블랙).jpg'},
-    { type: '쿨러', name: '3RSYS Socoool RC340', performance: 30, price: 19000, manufacturer:'3RSYS', release:'2023.05',
+    { type: '쿨러', name: '3RSYS Socoool RC340', performance: 50, price: 19000, manufacturer:'3RSYS', release:'2023.05',
     detail:`
     제조회사        3RSYS        
     등록년월        2023년 05월
@@ -1185,7 +1185,7 @@ const products = [
     LED 위치
     측면 LED        O
     `, image: '/images/GIGABYTE 지포스 RTX 4060 WINDFORCE OC D6 8GB 피씨디렉트.jpg'},
-    { type: '메인보드', name: 'GIGABYTE B550M AORUS ELITE 제이씨현', performance: 43, price: 126000, manufacturer:'GIGABYTE', release:'2020.06',
+    { type: '메인보드', name: 'GIGABYTE B550M AORUS ELITE 제이씨현', performance: 55, price: 126000, manufacturer:'GIGABYTE', release:'2020.06',
     detail:`
     제조회사        GIGABYTE        
     등록년월        2020년 06월
@@ -1274,7 +1274,7 @@ const products = [
     특징
     UEFI        O
     `, image: '/images/GIGABYTE B550M AORUS ELITE 제이씨현.jpg'},
-    { type: '램', name: '마이크론 Crucial DDR4-3200 CL22 대원씨티에스 (8GB)x2', performance: 30, price: 54000, manufacturer:'마이크론', release:'2023.05',
+    { type: '램', name: '마이크론 Crucial DDR4-3200 CL22 대원씨티에스 (8GB)x2', performance: 50, price: 54000, manufacturer:'마이크론', release:'2023.05',
     detail:`
     제조회사        마이크론        
     등록년월        2023년 05월
@@ -1288,7 +1288,7 @@ const products = [
     램개수        1개
     히트싱크        미포함
     `, image: '/images/마이크론 Crucial DDR4-3200 CL22 (8GB) x 2.jpg'},
-    { type: 'SSD', name: 'SK하이닉스 Gold P31 M.2 NVMe (1TB)', performance: 60, price: 110000, manufacturer:'SK하이닉스', release:'2021.01',
+    { type: 'SSD', name: 'SK하이닉스 Gold P31 M.2 NVMe (1TB)', performance: 100, price: 110000, manufacturer:'SK하이닉스', release:'2021.01',
     detail:`
     제조회사        SK하이닉스        
     등록년월        2021년 01월
@@ -1335,7 +1335,7 @@ const products = [
     두께        2.3mm        
     무게        7g
     `, image: '/images/SK하이닉스 Gold P31 M.2 NVMe (1TB).jpg'},
-    { type: '파워', name: '쿨러마스터 MWE 600 BRONZE V2 230V', performance: 60, price: 55000, manufacturer:'쿨러마스터', release:'2020.10',
+    { type: '파워', name: '쿨러마스터 MWE 600 BRONZE V2 230V', performance: 100, price: 55000, manufacturer:'쿨러마스터', release:'2020.10',
     detail:`
     제조회사        쿨러마스터        
     등록년월        2020년 10월
@@ -1431,7 +1431,7 @@ const products = [
     컨트롤러 지원
     RGB 컨트롤        O
     `, image: '/images/마이크로닉스 Master M60 메쉬 (블랙).jpg'},
-    { type: '쿨러', name: 'DEEPCOOL AG400', performance: 30, price: 23000, manufacturer:'DEEPCOOL', release:'2022.06',
+    { type: '쿨러', name: 'DEEPCOOL AG400', performance: 50, price: 23000, manufacturer:'DEEPCOOL', release:'2022.06',
     detail:`
     제조회사        DEEPCOOL        
     등록년월        2022년 06월
@@ -1559,7 +1559,7 @@ const products = [
     LED 위치
     측면 LED        O
     `, image: '/images/ZOTAC GAMING 지포스 RTX 4060 Ti TWIN Edge D6 8GB.jpg'},
-    { type: '메인보드', name: 'MSI PRO H610M-C EX', performance: 41, price: 117000, manufacturer:'MSI', release:'2022.03',
+    { type: '메인보드', name: 'MSI PRO H610M-C EX', performance: 50, price: 117000, manufacturer:'MSI', release:'2022.03',
     detail:`
     제조회사        MSI        
     등록년월        2022년 03월
@@ -1643,7 +1643,7 @@ const products = [
     특징
     UEFI        O
     `, image: '/images/MSI PRO H610M-C EX.jpg'},
-    { type: '램', name: '삼성전자 DDR5-5600 (16GB)x2', performance: 80, price: 122000, manufacturer:'삼성전자', release:'2023.02',
+    { type: '램', name: '삼성전자 DDR5-5600 (16GB)x2', performance: 100, price: 122000, manufacturer:'삼성전자', release:'2023.02',
     detail:`
     제조회사        삼성전자        
     등록년월        2023년 02월
@@ -1655,7 +1655,7 @@ const products = [
     램개수        1개
     히트싱크        미포함
     `, image: '/images/삼성전자 DDR5-5600 (16GB)x2.jpg'},
-    { type: 'SSD', name: '삼성전자 980 PRO M.2 NVMe (1TB)', performance: 65, price: 170000, manufacturer:'삼성전자', release:'2020.09',
+    { type: 'SSD', name: '삼성전자 980 PRO M.2 NVMe (1TB)', performance: 100, price: 170000, manufacturer:'삼성전자', release:'2020.09',
     detail:`
     제조회사        삼성전자        
     등록년월        2020년 09월
@@ -1710,7 +1710,7 @@ const products = [
     두께        2.38mm        
     무게        9g
     `, image: '/images/삼성전자 980 PRO M.2 NVMe (1TB).jpg'},
-    { type: '파워', name: '마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 70, price: 81000, manufacturer:'마이크로닉스', release:'2021.04',
+    { type: '파워', name: '마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 130, price: 81000, manufacturer:'마이크로닉스', release:'2021.04',
     detail:`
     제조회사        마이크로닉스        
     등록년월        2021년 04월
@@ -1811,7 +1811,7 @@ const products = [
     라디에이터(전면)        최대360mm, 280mm        
     라디에이터(후면)        최대120mm
     `, image: '/images/앱코 NCORE G30 트루포스 (블랙).png'},
-    { type: '쿨러', name: '앱코 타이폰 120X5', performance: 35, price: 31000, manufacturer:'앱코', release:'2022.07',
+    { type: '쿨러', name: '앱코 타이폰 120X5', performance: 60, price: 31000, manufacturer:'앱코', release:'2022.07',
     detail:`
     제조회사        앱코        
     등록년월        2022년 07월
@@ -1903,7 +1903,7 @@ const products = [
     후면 LED        O        
     측면 LED        O
     `, image: '/images/ZOTAC GAMING 지포스 RTX 3070 Ti D6X 8GB.png'},
-    { type: '메인보드', name: 'ASUS TUF Gaming B550-PLUS STCOM', performance: 78, price: 240000, manufacturer:'asus', release:'2020.06',
+    { type: '메인보드', name: 'ASUS TUF Gaming B550-PLUS STCOM', performance: 100, price: 240000, manufacturer:'asus', release:'2020.06',
     detail:`
     제조회사        ASUS        
     등록년월        2020년 06월
@@ -2009,7 +2009,7 @@ const products = [
     내장형(온보드) LED        O        
     후면 LED        O
     `, image: '/images/ASUS TUF Gaming B550-PLUS STCOM.png'},
-    { type: '램', name: '삼성전자 DDR4-3200 (16GB)x2', performance: 60, price: 94000, manufacturer:'삼성전자', release:'2020.07',
+    { type: '램', name: '삼성전자 DDR4-3200 (16GB)x2', performance: 90, price: 94000, manufacturer:'삼성전자', release:'2020.07',
     detail:`
     제조회사        삼성전자        
     등록년월        2020년 07월
@@ -2021,7 +2021,7 @@ const products = [
     램개수        1개
     히트싱크        미포함
     `, image: '/images/삼성전자 DDR4-3200 (8GB) x2.jpg'},
-    { type: 'SSD', name: 'HP EX950 M.2 2280(512)', performance: 35, price: 62100, manufacturer:'HP', release:'2019.08',
+    { type: 'SSD', name: 'HP EX950 M.2 2280(512)', performance: 50, price: 62100, manufacturer:'HP', release:'2019.08',
     detail:`
     제조회사        HP        
     등록년월        2019년 08월
@@ -2058,7 +2058,7 @@ const products = [
     두께        3.8mm        
     무게        최대 5.4g
     `, image: '/images/HP EX950 M.2 2280(512).png'},
-    { type: '파워', name: ' 마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 70, price: 80000, manufacturer:'마이크로닉스', release:'2021.04',
+    { type: '파워', name: ' 마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 130, price: 80000, manufacturer:'마이크로닉스', release:'2021.04',
     detail:`
     제조회사        마이크로닉스        
     등록년월        2021년 04월
@@ -2111,7 +2111,7 @@ const products = [
     과열(OTP/OHP)        O
     단락(SCP)        O
     `, image: '/images/마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU.jpg'},
-    { type: '케이스', name: 'darkFlash DLX21 RGB MESH 강화유리 (블랙)', performance: 70, price: 94000, manufacturer:'darkFlash', release:'2020.07',
+    { type: '케이스', name: 'darkFlash DLX21 RGB MESH 강화유리 (블랙)', performance: 100, price: 94000, manufacturer:'darkFlash', release:'2020.07',
     detail:`
     제조회사        darkFlash        
     등록년월        2020년 07월
@@ -2164,7 +2164,7 @@ const products = [
     컨트롤러 지원
     RGB 컨트롤        O
     `, image: '/images/darkFlash DLX21 RGB MESH 강화유리 (블랙).png'},
-    { type: '쿨러', name: 'darkFlash Twister DX-360 V2.6 ARGB (블랙)', performance: 70, price: 115000, manufacturer:'darkFlash', release:'2022.10',
+    { type: '쿨러', name: 'darkFlash Twister DX-360 V2.6 ARGB (블랙)', performance: 100, price: 115000, manufacturer:'darkFlash', release:'2022.10',
     detail:`
     제조회사        darkFlash        
     등록년월        2022년 10월
@@ -2295,7 +2295,7 @@ const products = [
     가로(길이)        304mm
     두께        42mm
     `, image: '/images/XFX 라데온 RX 6700 SWFT 309 CORE D6 10GB.png'},
-    { type: '메인보드', name: 'MSI MAG B760M 박격포 맥스 WIFI', performance: 75, price: 230000, manufacturer:'msi', release:'2023.01',
+    { type: '메인보드', name: 'MSI MAG B760M 박격포 맥스 WIFI', performance: 100, price: 230000, manufacturer:'msi', release:'2023.01',
     detail:`
     제조회사        MSI        
     등록년월        2023년 01월
@@ -2404,7 +2404,7 @@ const products = [
     M.2 히트싱크        O        
     UEFI        O
     `, image: '/images/MSI MAG B760M 박격포 맥스 WIFI.png'},
-    { type: '램', name: '마이크론 Crucial DDR5-5600 CL46 PRO 패키지 대원씨티에스 (32GB(16Gx2))', performance: 70, price: 150000, manufacturer:'마이크론', release:'2023.05',
+    { type: '램', name: '마이크론 Crucial DDR5-5600 CL46 PRO 패키지 대원씨티에스 (32GB(16Gx2))', performance: 100, price: 150000, manufacturer:'마이크론', release:'2023.05',
     detail:`
     제조회사        마이크론        
     등록년월        2023년 05월
@@ -2423,7 +2423,7 @@ const products = [
     EXPO        O
     온다이ECC        O
     `, image: '/images/마이크론 Crucial DDR5-5600 CL46 PRO 패키지 대원씨티에스 (32GB(16Gx2)).png'},
-    { type: 'SSD', name: 'SK하이닉스 Gold P31 M.2 NVMe (500GB)', performance: 30, price: 60000, manufacturer:'sk하이닉스', release:'2021.01',
+    { type: 'SSD', name: 'SK하이닉스 Gold P31 M.2 NVMe (500GB)', performance: 45, price: 60000, manufacturer:'sk하이닉스', release:'2021.01',
     detail:`
     제조회사        SK하이닉스        
     등록년월        2021년 01월
@@ -2470,7 +2470,7 @@ const products = [
     두께        2.3mm        
     무게        7g
     `, image: '/images/SK하이닉스 Gold P31 M.2 NVMe (500GB).png'},
-    { type: '파워', name: '잘만 MegaMax 600W 80PLUS STANDARD', performance: 62, price: 52000, manufacturer:'잘만', release:'2019.12',
+    { type: '파워', name: '잘만 MegaMax 600W 80PLUS STANDARD', performance: 100, price: 52000, manufacturer:'잘만', release:'2019.12',
     detail:`
     제조회사        잘만        
     등록년월        2019년 12월
@@ -2517,7 +2517,7 @@ const products = [
     과전력(OPP)        O        
     단락(SCP)        O
     `, image: '/images/잘만 MegaMax 600W 80PLUS STANDARD.png'},
-    { type: '쿨러', name: '쿨러마스터 HYPER 620S ARGB', performance: 30, price: 38000, manufacturer:'쿨러마스터', release:'2023.04',
+    { type: '쿨러', name: '쿨러마스터 HYPER 620S ARGB', performance: 50, price: 38000, manufacturer:'쿨러마스터', release:'2023.04',
     detail:`
     제조회사        쿨러마스터        
     등록년월        2023년 04월
@@ -2652,7 +2652,7 @@ const products = [
     LED 위치
     측면 LED        O
     `, image: '/images/갤럭시 GALAX 지포스 RTX 4060 Ti EX BLACK OC D6 8GB.png'},
-    { type: '메인보드', name: 'GIGABYTE B760M E 피씨디렉트', performance: 45, price: 139000, manufacturer:'GIGABYTE', release:'2023.09',
+    { type: '메인보드', name: 'GIGABYTE B760M E 피씨디렉트', performance: 50, price: 139000, manufacturer:'GIGABYTE', release:'2023.09',
     detail:`
     제조회사        GIGABYTE        
     등록년월        2023년 09월
@@ -2740,7 +2740,7 @@ const products = [
     특징
     UEFI        O
     `, image: '/images/GIGABYTE B760M E 피씨디렉트.png'},
-    { type: '램', name: 'TeamGroup T-Force DDR5-6000 CL38 Delta RGB 화이트 패키지 서린 (32GB(16Gx2))', performance: 70, price: 159000, manufacturer:'TeamGroup', release:'2022.02',
+    { type: '램', name: 'TeamGroup T-Force DDR5-6000 CL38 Delta RGB 화이트 패키지 서린 (32GB(16Gx2))', performance: 100, price: 159000, manufacturer:'TeamGroup', release:'2022.02',
     detail:`
     제조회사        TeamGroup        
     등록년월        2022년 02월
@@ -2767,7 +2767,7 @@ const products = [
     RGB FUSION        O        
     POLYCHROME        O
     `, image: '/images/TeamGroup T-Force DDR5-6000 CL38 Delta RGB 화이트 패키지 서린 (32GB(16Gx2)).png'},
-    { type: 'SSD', name: '키오시아 EXCERIA G2 M.2 NVMe (1TB)', price: 78000, performance: 55, manufacturer:'키오시아', release:'2022.11',
+    { type: 'SSD', name: '키오시아 EXCERIA G2 M.2 NVMe (1TB)', price: 78000, performance: 100, manufacturer:'키오시아', release:'2022.11',
     detail:`
     제조회사        키오시아        
     등록년월        2022년 11월
@@ -2819,7 +2819,7 @@ const products = [
     두께        2.23mm       
     무게        6.8g
     `, image: '/images/키오시아 EXCERIA G2 M.2 NVMe (1TB).png'},
-    { type: '파워', name: '시소닉 NEW FOCUS GX-850 GOLD Full Modular ATX 3.0', performance: 85, price: 200000, manufacturer:'시소닉', release:'2023.09',
+    { type: '파워', name: '시소닉 NEW FOCUS GX-850 GOLD Full Modular ATX 3.0', performance: 140, price: 200000, manufacturer:'시소닉', release:'2023.09',
     detail:`
     제조회사        시소닉        
     등록년월        2023년 09월
@@ -2869,7 +2869,7 @@ const products = [
     서지+인러쉬(SIP)        O        
     무부하(NLP)        O
     `, image: '/images/시소닉 NEW FOCUS GX-850 GOLD Full Modular ATX 3.0.png'},
-    { type: `케이스`, name: 'BRAVOTEC GUARDIAN 3100M V2 타이탄 글래스 (블랙)', performance: 70, price: 79000, manufacturer:'BRAVOTEC', release:'2022.12',
+    { type: `케이스`, name: 'BRAVOTEC GUARDIAN 3100M V2 타이탄 글래스 (블랙)', performance: 80, price: 79000, manufacturer:'BRAVOTEC', release:'2022.12',
     detail:`
     제조회사        BRAVOTEC        
     등록년월        2022년 12월
@@ -2921,7 +2921,7 @@ const products = [
     컨트롤러 지원
     RGB 컨트롤        O
     `, image: '/images/BRAVOTEC GUARDIAN 3100M V2 타이탄 글래스 (블랙).png'},
-    { type: '쿨러', name: '맥스엘리트 MOTHRA 360 AIO ARGB (BLACK)', performance: 70, price: 126000, manufacturer:'맥스엘리트', release:'2022.02',
+    { type: '쿨러', name: '맥스엘리트 MOTHRA 360 AIO ARGB (BLACK)', performance: 100, price: 126000, manufacturer:'맥스엘리트', release:'2022.02',
     detail:`
     제조회사        맥스엘리트        
     등록년월        2022년 02월
@@ -3004,7 +3004,7 @@ const products = [
     기술 지원
     하이퍼스레딩        ○
     `, image: '/images/인텔 코어 13세대 i9-13900KS.jpg'},
-    { type: 'gpu', name: 'ASUS GeForce RTX 4090 TUF GAMING O24G OC D6X 24GB', performance: 300, price: 3299000, manufacturer:'ASUS', release:'2022.10.',
+    { type: 'gpu', name: 'ASUS GeForce RTX 4090 TUF GAMING O24G OC D6X 24GB', performance: 200, price: 3299000, manufacturer:'ASUS', release:'2022.10.',
     detail:`
     제조회사        ASUS        
     등록년월        2022년 10월
@@ -3061,7 +3061,7 @@ const products = [
     구성품
     VGA지지대        ○
     `, image: '/images/ASUS GeForce RTX 4090 TUF GAMING O24G OC D6X 24GB.jpg'},
-    { type: '메인보드', name: 'ROG MAXIMUS Z690 EXTREME GLACIAL STCOM (인텔Z690/E-ATX)', performance: 300, price: 2874800, manufacturer:'ROG', release:'2021.11.',
+    { type: '메인보드', name: 'ROG MAXIMUS Z690 EXTREME GLACIAL STCOM (인텔Z690/E-ATX)', performance: 200, price: 2874800, manufacturer:'ROG', release:'2021.11.',
     detail:`
     제조회사        ASUS        
     등록년월        2021년 11월
@@ -3185,7 +3185,7 @@ const products = [
     I/O쉴드(아머) LED        ○        
     히트싱크 LED        ○
     `, image: '/images/ROG MAXIMUS Z690 EXTREME GLACIAL STCOM (인텔Z690,E-ATX).jpg'},
-    { type: '램', name: 'CORSAIR DDR5-5600 CL40 VENGEANCE RGB BLACK', performance: 280, price: 880000, manufacturer:'CORSAIR', release:'2023.02.',
+    { type: '램', name: 'CORSAIR DDR5-5600 CL40 VENGEANCE RGB BLACK', performance: 200, price: 880000, manufacturer:'CORSAIR', release:'2023.02.',
     detail:`
     제조회사        CORSAIR        
     등록년월        2023년 08월
@@ -3207,7 +3207,7 @@ const products = [
     LED 시스템
     CORSAIR iCUE        ○
     `, image: '/images/CORSAIR DDR5-5600 CL40 VENGEANCE RGB BLACK.jpg'},
-    { type: 'SSD', name: 'CORSAIR MP600 PRO LPX M.2 NVMe 2280 8TB', performance: 300, price: 1699000, manufacturer:'CORSAIR', release:'2022.02.',
+    { type: 'SSD', name: 'CORSAIR MP600 PRO LPX M.2 NVMe 2280 8TB', performance: 200, price: 1699000, manufacturer:'CORSAIR', release:'2022.02.',
     detail:`
     제조회사        CORSAIR        
     등록년월        2022년 02월
@@ -3256,7 +3256,7 @@ const products = [
     두께        11mm        
     무게        41g
     `, image: '/images/CORSAIR MP600 PRO LPX M.2 NVMe 2280 8TB.jpg'},
-    { type: '파워', name: 'ASUS ROG STRIX THOR 1600T (ATX/1600W)', performance: 300, price: 991000, manufacturer:'ASUS', release:'2023.06.',
+    { type: '파워', name: 'ASUS ROG STRIX THOR 1600T (ATX/1600W)', performance: 200, price: 991000, manufacturer:'ASUS', release:'2023.06.',
     detail:`
     제조회사        ASUS        
     등록년월        2022년 07월
@@ -3306,7 +3306,7 @@ const products = [
     LED 시스템
     AURA SYNC        O
     `, image: '/images/ASUS ROG STRIX THOR 1600T (ATX, 1600W).jpg'},
-    { type: '케이스', name: 'ABKO SUITMASTER AL1000 그레이 (빅타워)', performance: 300, price: 852500, manufacturer:'ABKO', release:'2020.11.',
+    { type: '케이스', name: 'ABKO SUITMASTER AL1000 그레이 (빅타워)', performance: 200, price: 852500, manufacturer:'ABKO', release:'2020.11.',
     detail:`
     제조회사        앱코        
     등록년월        2020년 11월
@@ -3388,7 +3388,7 @@ const products = [
     AURA SYNC        O        
     제조사 소프트웨어        O
     `, image: '/images/ASUS ROG RYUJIN III 360 ARGB WHITE EDITION.jpg'},
-    { type: 'gpu', name: 'ASUS GeForce RTX 4090 ROG STRIX O24G GAMING OC D6X 24GB', performance: 310, price: 3559000, manufacturer:'ASUS', release:'2023.06.',
+    { type: 'gpu', name: 'ASUS GeForce RTX 4090 ROG STRIX O24G GAMING OC D6X 24GB', performance: 200, price: 3559000, manufacturer:'ASUS', release:'2023.06.',
     detail:`
     제조회사        ASUS        
     등록년월        2022년 10월
@@ -3447,7 +3447,7 @@ const products = [
     구성품
     VGA지지대        O
     `, image: '/images/ASUS GeForce RTX 4090 ROG STRIX O24G GAMING OC D6X 24GB.jpg'},
-    { type: '메인보드', name: 'GIGABYTE Z790 AORUS XTREME 피씨디렉트 (인텔Z790/E-ATX)', performance: 270, price: 1550000, manufacturer:'GIGABYTE', release:'2023.10.',
+    { type: '메인보드', name: 'GIGABYTE Z790 AORUS XTREME 피씨디렉트 (인텔Z790/E-ATX)', performance: 170, price: 1550000, manufacturer:'GIGABYTE', release:'2023.10.',
     detail:`
     제조회사        GIGABYTE        
     등록년월        2022년 12월
@@ -3561,7 +3561,7 @@ const products = [
     로고 LED        O
     I/O쉴드(아머) LED        O
     `, image: '/images/GIGABYTE Z790 AORUS XTREME 피씨디렉트 (인텔Z790, E-ATX).jpg'},
-    { type: '램', name: 'G.SKILL DDR5-6400 CL32 TRIDENT Z5 RGB J 패키지 (96GB(48Gx2))', performance: 210, price: 577980, manufacturer:'G.SKILL', release:'2023.05.',
+    { type: '램', name: 'G.SKILL DDR5-6400 CL32 TRIDENT Z5 RGB J 패키지 (96GB(48Gx2))', performance: 170, price: 577980, manufacturer:'G.SKILL', release:'2023.05.',
     detail:`
     제조회사        G.SKILL        
     등록년월        2023년 05월
@@ -3588,7 +3588,7 @@ const products = [
     RGB FUSION        O        
     POLYCHROME        O
     `, image: '/images/G.SKILL DDR5-6400 CL32 TRIDENT Z5 RGB J 패키지 (96GB(48Gx2)).jpg'},
-    { type: 'SSD', name: '솔리다임 D3-S4520 SATA [7.68TB TLC]', performance: 280, price: 1562000, manufacturer:'솔리다임', release:'2023.02.',
+    { type: 'SSD', name: '솔리다임 D3-S4520 SATA [7.68TB TLC]', performance: 180, price: 1562000, manufacturer:'솔리다임', release:'2023.02.',
     detail:`
     제조회사        솔리다임        
     등록년월        2023년 02월
@@ -3613,7 +3613,7 @@ const products = [
     [환경특성]
     MTBF        200만시간
     `, image: '/images/솔리다임 D3-S4520 SATA [7.68TB TLC].jpg'},
-    { type: '파워', name: '시소닉 PRIME TITANIUM TX-1600 Full Modular ATX 3.0 (ATX/1600W)', performance: 300, price: 920000, manufacturer:'시소닉', release:'2023.07.',
+    { type: '파워', name: '시소닉 PRIME TITANIUM TX-1600 Full Modular ATX 3.0 (ATX/1600W)', performance: 200, price: 920000, manufacturer:'시소닉', release:'2023.07.',
     detail:`
     제조회사        시소닉        
     등록년월        2023년 07월
@@ -3667,7 +3667,7 @@ const products = [
     서지+인러쉬(SIP)        O        
     무부하(NLP)        O
     `, image: '/images/시소닉 PRIME TITANIUM TX-1600 Full Modular ATX 3.0 (ATX, 1600W).jpg'},
-    { type: '케이스', name: 'LIAN-LI V3000 PLUS (빅타워)', performance: 300, price: 839000, manufacturer:'LIAN-LI', release:'2023.04.',
+    { type: '케이스', name: 'LIAN-LI V3000 PLUS (빅타워)', performance: 200, price: 839000, manufacturer:'LIAN-LI', release:'2023.04.',
     detail:`
     제조회사        리안리        
     등록년월        2023년 04월
@@ -3805,7 +3805,7 @@ const products = [
     패키지 형태        정품        
     쿨러        미포함
     `, image: '/images/라이젠9 5세대 라파엘 7950X3D.jpg'},
-    { type: 'gpu', name: 'Colorful iGAME GeForce RTX 4080 Neptune OC D6X 16GB', performance: 250, price: 2159000, manufacturer:'COLORFUL', release:'2022.11.',
+    { type: 'gpu', name: 'Colorful iGAME GeForce RTX 4080 Neptune OC D6X 16GB', performance: 180, price: 2159000, manufacturer:'COLORFUL', release:'2022.11.',
     detail:`
     제조회사        COLORFUL        
     등록년월        2022년 11월
@@ -3868,7 +3868,7 @@ const products = [
     구성품
     4x8핀 to 16핀 커넥터        O
     `, image: '/images/Colorful iGAME GeForce RTX 4080 Neptune OC D6X 16GB.jpg'},
-    { type: '메인보드', name: 'ASRock X670E Taichi 에즈윈 (AMD X670/ATX)', performance: 250, price: 939000, manufacturer:'ASRock', release:'2022.09.',
+    { type: '메인보드', name: 'ASRock X670E Taichi 에즈윈 (AMD X670/ATX)', performance: 150, price: 939000, manufacturer:'ASRock', release:'2022.09.',
     detail:`
     제조회사        ASRock        
     등록년월        2022년 09월
@@ -3978,7 +3978,7 @@ const products = [
     로고 LED        O
     히트싱크 LED        O
     `, image: '/images/ASRock X670E Taichi 에즈윈 (AMD X670, ATX).jpg'},
-    { type: '램', name: 'OLOy DDR5-6200 CL32 BLADE RGB MIRROR 패키지 (32GB(16Gx2))', performance: 80, price: 543950, manufacturer:'OLOy', release:'2021.12.',
+    { type: '램', name: 'OLOy DDR5-6200 CL32 BLADE RGB MIRROR 패키지 (32GB(16Gx2))', performance: 150, price: 543950, manufacturer:'OLOy', release:'2021.12.',
     detail:`
     제조회사        OLOy        
     등록년월        2021년 12월
@@ -4003,7 +4003,7 @@ const products = [
     RGB FUSION        O        
     POLYCHROME        O
     `, image: '/images/OLOy DDR5-6200 CL32 BLADE RGB MIRROR 패키지 (32GB(16Gx2)).jpg'},
-    { type: 'SSD', name: '마이크론 Crucial T700 M.2 NVMe 2280 아스크텍 [4TB TLC] Heatsink', performance: 100, price: 915000, manufacturer:'마이크론', release:'2023.05.',
+    { type: 'SSD', name: '마이크론 Crucial T700 M.2 NVMe 2280 아스크텍 [4TB TLC] Heatsink', performance: 150, price: 915000, manufacturer:'마이크론', release:'2023.05.',
     detail:`
     제조회사        마이크론        
     등록년월        2023년 05월
@@ -4049,7 +4049,7 @@ const products = [
     두께        21mm        
     무게        55g
     `, image: '/images/마이크론 Crucial T700 M.2 NVMe 2280 아스크텍 [4TB TLC] Heatsink.jpg'},
-    { type: '파워', name: 'be quiet DARK POWER PRO 13 1600W 80PLUS TITANIUM (ATX/1600W)', performance: 300, price: 837000, manufacturer:'be quiet!', release:'2023.10.',
+    { type: '파워', name: 'be quiet DARK POWER PRO 13 1600W 80PLUS TITANIUM (ATX/1600W)', performance: 200, price: 837000, manufacturer:'be quiet!', release:'2023.10.',
     detail:`
     제조회사        be quiet        
     등록년월        2023년 10월
@@ -4094,7 +4094,7 @@ const products = [
     단락(SCP)        O
     서지+인러쉬(SIP)        O
     `, image: '/images/be quiet DARK POWER PRO 13 1600W 80PLUS TITANIUM (ATX, 1600W).jpg'},
-    { type: '케이스', name: '쿨러마스터 COSMOS C700M 화이트 (빅타워)', performance: 300, price: 835000, manufacturer:'쿨러마스터', release:'2022.09.',
+    { type: '케이스', name: '쿨러마스터 COSMOS C700M 화이트 (빅타워)', performance: 200, price: 835000, manufacturer:'쿨러마스터', release:'2022.09.',
     detail:`
     제조회사        쿨러마스터        
     등록년월        2022년 09월
