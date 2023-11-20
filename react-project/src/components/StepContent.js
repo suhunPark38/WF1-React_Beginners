@@ -81,6 +81,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
       {index === 2 && renderBudgetSlider()}
       {index === 11 && renderProgressBar()}
       {index === 12 && renderSelectedValues()}
+      </div>
     </Paper>
 
   );
