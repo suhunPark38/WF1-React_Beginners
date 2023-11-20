@@ -1,0 +1,44 @@
+.box1{
+    height: 50vh !important;
+    width: 30% !important;
+
+    background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
+
+    position: relative;
+
+    left: 5%;
+    top: 20%;
+
+}
+
+.box2{
+    height: 30vh !important;
+    width: 30% !important;
+
+    background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
+
+    position: relative;
+
+    left: 5%;
+    top: 80%;
+
+}
+
+
+.box3 {
+
+
+  height: 75vh !important;
+  width: 55% !important;
+
+  background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
+
+  position: absolute;
+  top: 10%;
+  right : 5%;
+
+
+
+
+
+}

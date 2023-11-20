@@ -3,18 +3,16 @@ import RenderRadioGroup from './RenderRadioGroup';
 import ProgressBar from './ProgressBar';
 import CompleteTable from './CompleteTable';
 import products from "../data/products";
+
+import "../css/helper.css";
+
 import {
   Paper,
   Typography,
 } from '@mui/material';
 
 const styles = {
-  paper: {
-    padding: 30,
-    textAlign: 'center',
-    height: '50vh',
-    overflowY: 'scroll',
-  },
+
   slider: {
     width: '50%',
     position: 'relative',
@@ -33,7 +31,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
 
   // 예산 슬라이더 렌더링
   const renderBudgetSlider = () => (
-    <div>
+    <div className="help1">
       <Typography variant="body2">{budgetSliderValue}</Typography>
       <input
         type="range"
@@ -66,7 +64,9 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
   );
 
   return (
-    <Paper style={styles.paper}>
+
+    <Paper>
+    <div className="paper">
       <Typography variant="h4">{item.name}</Typography>
       {(index === 1 || (index >= 3 && index <= 9)) && (
         <RenderRadioGroup
@@ -81,7 +81,9 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
       {index === 2 && renderBudgetSlider()}
       {index === 10 && renderProgressBar()}
       {index === 11 && renderSelectedValues()}
-    </Paper>
+      </div>
+      </Paper>
+
   );
 };
 

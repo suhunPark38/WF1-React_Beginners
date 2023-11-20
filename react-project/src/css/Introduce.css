@@ -12,16 +12,15 @@ body {
 
 
   height: 100%;
-  width: 80%; /* 페이지 너비를 80%로 제한 */
+  width: 90%; /* 페이지 너비를 80%로 제한 */
   margin: 0 auto; /* 페이지 중앙 정렬을 위한 margin 설정 */
   background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
-  padding: 20px; /* 내용과 화면 경계 간의 여백 */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+
 
 }
 
 .title{
-    width: 20%; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+    text-align: center; /* 정렬하려는 요소의 넓이를 반드시 지정 */
     padding: 20px;
     margin: 0 auto;
 

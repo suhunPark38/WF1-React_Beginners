@@ -11,26 +11,17 @@ export const Home = () => {
           <Header />
 
 
-          <Form />
-          <div className="container">
+
+          <div className="main_box">
 
           <Carousel />
           </div>
           </>
-
-
-
       );
     };
 
 
-export const Form = () => {
-  return (
-    <div>
-      <h1 className="title">컴퓨터 견적도우미 </h1>
-    </div>
-  );
-};
+
 
 
 
