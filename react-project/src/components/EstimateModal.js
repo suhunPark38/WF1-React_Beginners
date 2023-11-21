@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
-import EstimateInformArray from "./EstimateInformArray";
 
 /*
 견적 정보를 표시해주는 모달
@@ -21,7 +20,7 @@ const style = {
     p: 4,
 };
 
-const EstimateModal = (estimateName, price, performance) => {
+const EstimateModal = (estimateName, totalPrice, totalPerformance) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -41,10 +40,9 @@ const EstimateModal = (estimateName, price, performance) => {
                         {estimateName}
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        {
-                            EstimateInformArray(price, performance)
-                            //EstimateInformArray(Estimates.find((estimate)=>(estimate.type === estimateName)))
-                        }
+                        <strong>견적 가격:</strong> {totalPrice}
+                        <p></p>
+                        <strong>견적 성능:</strong> {totalPerformance}
                     </Typography>
                     <Button onClick={handleClose}>Close</Button>
                 </Box>

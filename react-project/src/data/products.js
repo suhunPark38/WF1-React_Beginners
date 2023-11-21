@@ -1849,7 +1849,7 @@ const products = [
     두께        3.8mm        
     무게        최대 5.4g
     `, image: '/images/HP EX950 M.2 2280(512).png'},
-    { type: '파워', name: ' 마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 130, price: 80000, manufacturer:'마이크로닉스', release:'2021.04',
+    { type: '파워', name: '마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 130, price: 80000, manufacturer:'마이크로닉스', release:'2021.04',
     detail:`
     제조회사        마이크로닉스        
     등록년월        2021년 04월

@@ -9,36 +9,33 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ProductModal from "./ProductModal";
 import EstimateModal from "./EstimateModal";
-import products from "../data/products";
+import products from "../data/products"
 
 /*
 견적 페이지에 나타낼 태이블. 여러 종류의 부품을 기입하다보니 이름만으로 텍스트가 너무 길어져서 깔끔하게 하고자 테이블로 표시함
  */
-const EstimateTable = ()=> {
-    let totalPrice = 0;
-    let totalPerformance = 0;
-    const getTotalPrices = (row) => (
-        totalPrice += products.find((product)=>(product.name === row.cpu)).price
-    + products.find((product)=>(product.name === row.gpu)).price
-    + products.find((product)=>(product.name === row.board)).price
-    + products.find((product)=>(product.name === row.ram)).price
-    + products.find((product)=>(product.name === row.ssd)).price
-    + products.find((product)=>(product.name === row.power)).price
-    + products.find((product)=>(product.name === row.computerCase)).price
 
-    )
+const getTotalPrice = (row) => (
+        products.find((product)=>(product.name === row.cpu)).price
+        + products.find((product)=>(product.name === row.gpu)).price
+        + products.find((product)=>(product.name === row.board)).price
+        + products.find((product)=>(product.name === row.ram)).price
+        + products.find((product)=>(product.name === row.ssd)).price
+        + products.find((product)=>(product.name === row.power)).price
+        + products.find((product)=>(product.name === row.computerCase)).price
+)
 
-    const getTotalPerformance = (row) => (
-        totalPerformance += products.find((product)=>(product.name === row.cpu)).performance
-            + products.find((product)=>(product.name === row.gpu)).performance
-            + products.find((product)=>(product.name === row.board)).performance
-            + products.find((product)=>(product.name === row.ram)).performance
-            + products.find((product)=>(product.name === row.ssd)).performance
-            + products.find((product)=>(product.name === row.power)).performance
-            + products.find((product)=>(product.name === row.computerCase)).performance
-    )
+const getTotalPerformance = (row) => (
+        products.find((product)=>(product.name === row.cpu)).performance
+        + products.find((product)=>(product.name === row.gpu)).performance
+        + products.find((product)=>(product.name === row.board)).performance
+        + products.find((product)=>(product.name === row.ram)).performance
+        + products.find((product)=>(product.name === row.ssd)).performance
+        + products.find((product)=>(product.name === row.power)).performance
+        + products.find((product)=>(product.name === row.computerCase)).performance
+)
 
-    return(
+const EstimateTable = ()=> (
         <TableContainer component={Paper}>
             <Table>
                 <TableHead>
@@ -61,7 +58,8 @@ const EstimateTable = ()=> {
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
                             <TableCell component="th" scope="row">
-                                {row.type}{EstimateModal(row.type, getTotalPrices(row), getTotalPerformance(row))}
+                                {row.type}
+                                {EstimateModal(row.type, getTotalPrice(row), getTotalPerformance(row))}
                             </TableCell>
                             <TableCell align="left">{row.cpu}{ProductModal(row.cpu)}</TableCell>
                             <TableCell align="left">{row.gpu}{ProductModal(row.gpu)}</TableCell>
@@ -77,6 +75,6 @@ const EstimateTable = ()=> {
             </Table>
         </TableContainer>
     )
-}
+
 
 export default EstimateTable;
