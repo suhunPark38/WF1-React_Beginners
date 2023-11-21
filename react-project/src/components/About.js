@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from './Header';
 
 import "../css/About.css";
 
 
 export const About = () => (
             <>
-            <Header />
              <div className="box1">
                  <h1>리액트 초보만(4/4)</h1>
                  <ul>

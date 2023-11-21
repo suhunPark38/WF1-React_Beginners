@@ -48,7 +48,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
   // 선택된 값 렌더링
   const renderSelectedValues = () => {
     const selectedProducts = products.filter(product => selectedRadioGroups.includes(product.name));
-    return <CompleteTable data={selectedProducts} />;
+    return <CompleteTable data={selectedProducts}/>
   };
 
   // 프로그레스 바 렌더링
