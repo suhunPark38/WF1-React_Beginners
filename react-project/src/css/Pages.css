@@ -21,3 +21,10 @@ border:1px solid;
   background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
 
 }
+
+@media screen and (max-height: 1000px) {
+  .main_box {
+    height: 100vh;
+
+  }
+}

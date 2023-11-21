@@ -3,11 +3,14 @@
 .stepper {
 
     padding: 16px;
-    textAlign: center;
-    height: 20vh;
+
+
     width: 30vh;
     float: right;
+
 
      word-wrap: break-word;
 
 }
+
+
