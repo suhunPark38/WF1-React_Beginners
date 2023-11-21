@@ -12,8 +12,6 @@
   .paper {
     text-align: center;
     height: 60vh;
-
-
     overflow:scroll;
     overflow-x: hidden;
     padding-top: 30vh;
@@ -25,9 +23,11 @@
 
     font-family: 'Jua', sans-serif;
 
+  }
 
+  @media screen and (max-height: 1000px) {
+    .paper {
+      height: 90vh;
 
-
-
-
+    }
   }
