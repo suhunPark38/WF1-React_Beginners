@@ -220,13 +220,13 @@ const Carousel = () => {
             case '케이스':
 
                     return products
-                        .filter((product) => product.type === setType && product.price <= budgetSliderValue*1100 && product.price >= budgetSliderValue*500)
+                        .filter((product) => product.type === setType && product.price <= budgetSliderValue*1100 && product.price >= budgetSliderValue*100)
                         .map((product) => product.name);
 
             case '쿨러':
                 if (selectedRadioGroups[0] !== '사무용') {
                     return products
-                        .filter((product) => product.type === setType && product.price <= budgetSliderValue*500 && product.price >=budgetSliderValue*200)
+                        .filter((product) => product.type === setType && product.price <= budgetSliderValue*500 && product.price >=budgetSliderValue*100)
                         .map((product) => product.name);
                 }
                 return products
