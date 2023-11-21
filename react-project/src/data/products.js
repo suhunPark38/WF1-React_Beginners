@@ -675,7 +675,7 @@ const products = [
     추가 구성
     백플레이트        O
     `, image: '/images/MSI 지포스 RTX 3050 벤투스 2X XS OC D6 8GB.jpg'},
-    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 50, price: 97000, manufacturer:'ASUS', release:'2022.01',
+    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 50, price: 80000, manufacturer:'ASUS', release:'2022.01',
     detail:`
     제조회사        ASUS        
     등록년월        2022년 01월
