@@ -40,7 +40,7 @@ const Carousel = () => {
         {name: '예산을 한정해주세요.', sliderValue: budgetSliderValue},
         {name: '추천하는 CPU를 골라주세요.', radioGroup: 'group2', options: options.Cpu},
         {name: '추천하는 GPU를 골라주세요.', radioGroup: 'group3', options: options.Gpu},
-        {name: '추천하는 다음을 추천합니다.', radioGroup: 'group4', options: options.Motherboard},
+        {name: '추천하는 보드를 골라주세요.', radioGroup: 'group4', options: options.Motherboard},
         {name: '추천하는 램을 골라주세요.', radioGroup: 'group5', options: options.Ram},
         {name: '추천하는 SSD를 골라주세요.', radioGroup: 'group6', options: options.SSD},
         {name: '추천하는 파워를 골라주세요.', radioGroup: 'group7', options: options.Power},
