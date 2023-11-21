@@ -35,17 +35,17 @@ const Carousel = () => {
         {
             name: '컴퓨터를 사용하는 목적이 무엇인가요?',
             radioGroup: 'group1',
-            options: ['사무용', '일상용', '게임용', '고사양'],
+            options: ['사무용', '엔터테인먼트', '디자인 및 창작', '고사양 작업'],
         },
-        {name: '예산을 한정해주세요.', sliderValue: budgetSliderValue},
-        {name: '추천하는 CPU를 골라주세요.', radioGroup: 'group2', options: options.Cpu},
-        {name: '추천하는 GPU를 골라주세요.', radioGroup: 'group3', options: options.Gpu},
-        {name: '추천하는 보드를 골라주세요.', radioGroup: 'group4', options: options.Motherboard},
-        {name: '추천하는 램을 골라주세요.', radioGroup: 'group5', options: options.Ram},
-        {name: '추천하는 SSD를 골라주세요.', radioGroup: 'group6', options: options.SSD},
-        {name: '추천하는 파워를 골라주세요.', radioGroup: 'group7', options: options.Power},
-        {name: '추천하는 케이스를 골라주세요.', radioGroup: 'group8', options: options.Case},
-        {name: '추천하는 쿨러를 골라주세요.', radioGroup: 'group9', options: options.Cooler},
+        {name: '어느 정도의 예산을 생각하고 있나요?', sliderValue: budgetSliderValue},
+        {name: '다음 CPU중 하나를 골라주세요.', radioGroup: 'group2', options: options.Cpu},
+        {name: '다음 GPU중 하나를 골라주세요.', radioGroup: 'group3', options: options.Gpu},
+        {name: '다음 보드중 하나를 골라주세요.', radioGroup: 'group4', options: options.Motherboard},
+        {name: '다음 램중 하나를 골라주세요.', radioGroup: 'group5', options: options.Ram},
+        {name: '다음 SSD중 하나를 골라주세요.', radioGroup: 'group6', options: options.SSD},
+        {name: '다음 파워중 하나를 골라주세요.', radioGroup: 'group7', options: options.Power},
+        {name: '다음 케이스중 하나를 골라주세요.', radioGroup: 'group8', options: options.Case},
+        {name: '다음 쿨러중 하나를 골라주세요.', radioGroup: 'group9', options: options.Cooler},
 
         {name: '호환성 검사 단계입니다.'},
         {name: '완성'},
@@ -106,16 +106,16 @@ const Carousel = () => {
     const handleGroup1Change = (selectedOption) => {
         switch (selectedOption) {
             case '사무용':
-                setBudgetSliderValue(30);
+                setBudgetSliderValue(40);
                 break;
-            case '일상용':
+            case '엔터테인먼트':
                 setBudgetSliderValue(100);
                 break;
-            case '게임용':
-                setBudgetSliderValue(180);
+            case '디자인 및 창작':
+                setBudgetSliderValue(140);
                 break;
-            case '고사양':
-                setBudgetSliderValue(1000);
+            case '고사양 작업':
+                setBudgetSliderValue(250);
                 break;
             default:
 
@@ -128,7 +128,7 @@ const Carousel = () => {
             case 'CPU':
                 if (selectedRadioGroups[0] !== '사무용') {
                     return products
-                        .filter((product) => product.type === setType && product.price <= budgetSliderValue * 2000 && product.price > 140000)
+                        .filter((product) => product.type === setType && product.price <= budgetSliderValue * 2000 && product.price > budgetSliderValue *500)
                         .map((product) => product.name);
                 }
                 return products
@@ -137,7 +137,7 @@ const Carousel = () => {
             case 'gpu':
                 if (selectedRadioGroups[0] !== '사무용') {
                     return products
-                        .filter((product) => product.type === setType && product.price <= budgetSliderValue * 3300 && product.price > 0)
+                        .filter((product) => product.type === setType && product.price <= budgetSliderValue * 3300 && product.price > budgetSliderValue *1000)
                         .map((product) => product.name);
                 }
                 return products
@@ -180,7 +180,7 @@ const Carousel = () => {
 
             case 'SSD':
                 return products
-                    .filter((product) => product.type === setType && product.price <=budgetSliderValue* 1200)
+                    .filter((product) => product.type === setType && product.price <= budgetSliderValue * 1200)
                     .map((product) => product.name);
             case '파워':
                 const selectedGpu = selectedRadioGroups[2];
@@ -198,7 +198,7 @@ const Carousel = () => {
                         if (is500 && product.name.includes('500')) {
                             return true;
                         }
-                        if (is600 && product.name.includes('600') &&product.price<800000) {
+                        if (is600 && product.name.includes('600') && product.price < 800000) {
                             return true;
                         }
                         if (is700 && (product.name.includes('700'))) {
@@ -219,14 +219,14 @@ const Carousel = () => {
                     .map((product) => product.name);
             case '케이스':
 
-                    return products
-                        .filter((product) => product.type === setType && product.price <= budgetSliderValue*1100 && product.price >= budgetSliderValue*100)
-                        .map((product) => product.name);
+                return products
+                    .filter((product) => product.type === setType && product.price <= budgetSliderValue * 800 && product.price >= budgetSliderValue * 100)
+                    .map((product) => product.name);
 
             case '쿨러':
                 if (selectedRadioGroups[0] !== '사무용') {
                     return products
-                        .filter((product) => product.type === setType && product.price <= budgetSliderValue*500 && product.price >=budgetSliderValue*100)
+                        .filter((product) => product.type === setType && product.price <= budgetSliderValue * 500 && product.price >= budgetSliderValue * 100)
                         .map((product) => product.name);
                 }
                 return products
