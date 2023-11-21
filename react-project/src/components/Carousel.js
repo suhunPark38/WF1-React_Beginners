@@ -166,8 +166,8 @@ const Carousel = () => {
                 return products
                     .filter((product) =>
                         product.type === setType &&
-                        product.price >= budgetSliderValue * 500 &&
-                        product.price <= budgetSliderValue * 1200 &&
+                        product.price >= budgetSliderValue * 100 &&
+                        product.price <= budgetSliderValue * 2000 &&
                         (
                             !selectedMotherboardDetail ||
                             (
