@@ -1,6 +1,5 @@
 import React from 'react';
 import RenderRadioGroup from './RenderRadioGroup';
-import ProgressBar from './ProgressBar';
 import CompleteTable from './CompleteTable';
 import products from "../data/products";
 
@@ -53,6 +52,8 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
   };
 
   // 프로그레스 바 렌더링
+  /*
+  필요 없는 기능이라 주석처리. 나중에 사용할 수 있으니 일단 삭제하지는 않음
   const renderProgressBar = () => (
     <div>
       <ProgressBar activeStep={activeStep} />
@@ -62,6 +63,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
       ))}
     </div>
   );
+   */
 
   return (
 
@@ -79,8 +81,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
         />
       )}
       {index === 2 && renderBudgetSlider()}
-      {index === 11 && renderProgressBar()}
-      {index === 12 && renderSelectedValues()}
+      {index === 11 && renderSelectedValues()}
       </div>
     </Paper>
 

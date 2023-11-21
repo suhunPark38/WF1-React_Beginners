@@ -47,14 +47,12 @@ const Carousel = () => {
     { name: '선호하는 파워를 골라주세요.', radioGroup: 'group7', options: options.Power },
     { name: '선호하는 케이스를 골라주세요.', radioGroup: 'group8', options: options.Case },
     { name: '선호하는 쿨러를 골라주세요.', radioGroup: 'group9', options: options.Cooler },
-
-    {name: '호환성 검사 단계입니다.'},
     {name: '완성'},
   ];
 
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -140,7 +138,7 @@ const Carousel = () => {
 
   // 다음 버튼이 활성화되어야 하는지 여부를 결정하는 함수
   const isNextButtonDisabled = () => {
-   if (activeStep===12) {
+   if (activeStep===11) {
         return true;
       }
   if (activeStep === 1 && selectedRadioGroups[activeStep - 1] === '') {
