@@ -24,7 +24,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
   const getBudgetRange = (type, purpose) => {
     const ranges = {
       'min': { '사무용': 30, '일상용': 80, '게임용': 130, '고사양': 250 },
-      'max': { '사무용': 80, '일상용': 130, '게임용': 250, '고사양': 1000 },
+      'max': { '사무용': 80, '일상용': 130, '게임용': 250, '고사양': 1200 },
     };
     return ranges[type][purpose] || undefined;
   };
@@ -37,7 +37,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
         type="range"
         min={getBudgetRange('min', selectedRadioGroups[0])}
         max={getBudgetRange('max', selectedRadioGroups[0])}
-        step={5}
+        step={10}
         value={budgetSliderValue}
         onChange={(e) => setBudgetSliderValue(parseInt(e.target.value))}
         style={styles.slider}
