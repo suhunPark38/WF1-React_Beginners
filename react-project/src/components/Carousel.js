@@ -54,7 +54,7 @@ const Carousel = () => {
 
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -160,7 +160,7 @@ const Carousel = () => {
 
       {/* 이미지 및 설명이 표시되는 슬라이더 */}
       <Slider ref={sliderRef} {...settings}>
-  {items.map((item, index) => (
+        {items.map((item, index) => (
           <div key={index}>
             <StepContent
               index={index}

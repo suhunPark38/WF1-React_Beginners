@@ -67,7 +67,7 @@ const StepContent = ({ index, item, activeStep, selectedRadioGroups, handleRadio
 
     <Paper>
     <div className="paper">
-      <Typography variant="h4">{item.name}</Typography>
+      <Typography variant="h3">{item.name}</Typography>
       {(index === 1 || (index >= 3 && index <= 10)) && (
         <RenderRadioGroup
           index={index}
