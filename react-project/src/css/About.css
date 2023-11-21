@@ -52,3 +52,21 @@ margin-top: 20px;
 .box1, .box2, .box3 {
   font-family: 'Jua', sans-serif;
 }
+
+
+li {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-height: 900px) {
+  .box3 {
+    width: 100vh !important;
+
+  }
+}

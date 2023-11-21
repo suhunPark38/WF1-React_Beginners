@@ -22,7 +22,7 @@ border:1px solid;
 
 }
 
-@media screen and (max-height: 1000px) {
+@media screen and (max-height: 900px) {
   .main_box {
     height: 120vh;
 
