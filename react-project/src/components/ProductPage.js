@@ -4,9 +4,8 @@ import "../css/Introduce.css";
 
 
 
-export const Introduce = () => (
+export const ProductPage = () => (
     <>
-
          <div className="container">
         <ProductList/>
     </div>

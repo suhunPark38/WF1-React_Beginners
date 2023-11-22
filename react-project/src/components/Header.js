@@ -27,13 +27,13 @@ const Header = () => {
         <Tab
           label="부품 페이지"
           component={Link}
-          to="/Introduce"
+          to="/ProductPage"
           className="tabLabel" // tabLabel 클래스 적용
         />
         <Tab
           label="견적 페이지"
           component={Link}
-          to="/Result"
+          to="/EstimatePage"
           className="tabLabel" // tabLabel 클래스 적용
         />
       </Tabs>

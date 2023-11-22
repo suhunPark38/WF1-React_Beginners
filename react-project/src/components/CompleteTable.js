@@ -3,6 +3,7 @@ import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import { Page, Text, View, Document, StyleSheet, PDFDownloadLink, Font, Image } from '@react-pdf/renderer';
 
+// 한글을 pdf에서 지원하지 않아 폰트를 불러와야함
 Font.register({
   family: 'Nanum Gothic',
   src: './NanumGothic.ttf'
@@ -43,6 +44,7 @@ const CompleteTable = ({ data }) => {
     },
   });
 
+  //설문 결과 생성된 견적을 Document로 생성
   const MyDocument = () => (
     <Document>
       <Page size="A4">

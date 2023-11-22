@@ -1,6 +1,7 @@
 import React from 'react';
 import RenderRadioGroup from './RenderRadioGroup';
 import CompleteTable from './CompleteTable';
+import ProgressBar from "./ProgressBar";
 import products from "../data/products";
 
 import "../css/helper.css";
@@ -60,17 +61,6 @@ const StepContent = ({
         return <CompleteTable data={selectedProducts}/>;
     };
 
-    // 프로그레스 바 렌더링
-    const renderProgressBar = () => (
-        <div>
-            <ProgressBar activeStep={activeStep}/>
-            <div>한정한 금액 : {budgetSliderValue}만원</div>
-            {selectedRadioGroups.map((value, i) => (
-                <div key={i}>{`단계 ${i + 1}: ${value}`}</div>
-            ))}
-        </div>
-    );
-
 
     return (
 
@@ -88,8 +78,7 @@ const StepContent = ({
                     />
                 )}
                 {index === 2 && renderBudgetSlider()}
-                {index === 11 && renderProgressBar()}
-                {index === 12 && renderSelectedValues()}
+                {index === 11 && renderSelectedValues()}
             </div>
         </Paper>
 
