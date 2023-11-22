@@ -1,7 +1,6 @@
 import React from 'react';
 import RenderRadioGroup from './RenderRadioGroup';
 import CompleteTable from './CompleteTable';
-import ProgressBar from "./ProgressBar";
 import products from "../data/products";
 
 import "../css/helper.css";
