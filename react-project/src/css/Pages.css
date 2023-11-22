@@ -11,13 +11,20 @@
 .main_box {
 
 
-
+border:1px solid;
   height: 90vh ;
-  width: 90% ; /* 페이지 너비를 80%로 제한 */
+  width: 90% ;
   margin-top: 5px;
   margin-left: 5%;
-   /* 페이지 중앙 정렬을 위한 margin 설정 */
+
+
   background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
 
+}
 
+@media screen and (max-height: 900px) {
+  .main_box {
+    height: 120vh;
+
+  }
 }

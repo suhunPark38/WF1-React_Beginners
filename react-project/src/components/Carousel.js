@@ -14,6 +14,7 @@ const Carousel = () => {
 
 
 
+
     const resetSelectedOptions = Array(9).fill('');
     const sliderRef = useRef(null);
     const [activeStep, setActiveStep] = useState(0);
@@ -277,6 +278,7 @@ const Carousel = () => {
                 ))}
             </Slider>
 
+
             <div className="Button">
                 <Button
                     onClick={() => handleSlideChange('prev')}
@@ -297,6 +299,7 @@ const Carousel = () => {
             </div>
         </div>
     );
+
 };
 
 export default Carousel;

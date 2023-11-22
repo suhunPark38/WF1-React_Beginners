@@ -13,6 +13,8 @@ import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 import {saveAs} from 'file-saver';
 
+import '../css/EstimateTable.css';
+
 /*
 견적 페이지에 나타낼 태이블. 여러 종류의 부품을 기입하다보니 이름만으로 텍스트가 너무 길어져서 깔끔하게 하고자 테이블로 표시함
  */
@@ -47,15 +49,15 @@ const EstimateTable = ()=> (
             <Table>
                 <TableHead>
                     <TableRow>
-                        <TableCell>견적 종류</TableCell>
-                        <TableCell align="center">cpu</TableCell>
-                        <TableCell align="center">gpu</TableCell>
-                        <TableCell align="center">메인보드</TableCell>
-                        <TableCell align="center">램</TableCell>
-                        <TableCell align="center">SSD</TableCell>
-                        <TableCell align="center">파워</TableCell>
-                        <TableCell align="center">팬</TableCell>
-                        <TableCell align="center">케이스</TableCell>
+                        <TableCell  className="table">견적 종류</TableCell>
+                        <TableCell className="table" >cpu</TableCell>
+                        <TableCell className="table" >gpu</TableCell>
+                        <TableCell className="table" >메인보드</TableCell>
+                       <TableCell className="table" >램</TableCell>
+                        <TableCell className="table" >SSD</TableCell>
+                        <TableCell className="table" >파워</TableCell>
+                       <TableCell className="table" >팬</TableCell>
+                        <TableCell className="table" >케이스</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -64,20 +66,20 @@ const EstimateTable = ()=> (
                             key={row.type}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
-                            <TableCell component="th" scope="row">
+                            <TableCell className="table_type" component="th" scope="row">
                                 {row.type}
                                 <p>{"총 가격: "+getTotalPrice(row)}</p>
                                 <p>{"총 성능: "+getTotalPerformance(row)}</p>
                                 <Button onClick={()=>arrayToFile(row)}> <DownloadIcon/></Button>
                             </TableCell>
-                            <TableCell align="left">{row.cpu}{ProductModal(row.cpu)}</TableCell>
-                            <TableCell align="left">{row.gpu}{ProductModal(row.gpu)}</TableCell>
-                            <TableCell align="left">{row.board}{ProductModal(row.board)}</TableCell>
-                            <TableCell align="left">{row.ram}{ProductModal(row.ram)}</TableCell>
-                            <TableCell align="left">{row.ssd}{ProductModal(row.ssd)}</TableCell>
-                            <TableCell align="left">{row.power}{ProductModal(row.power)}</TableCell>
-                            <TableCell align="left">{row.fan}{ProductModal(row.fan)}</TableCell>
-                            <TableCell align="left">{row.computerCase}{ProductModal(row.computerCase)}</TableCell>
+                            <TableCell className="tableL" >{row.cpu}{ProductModal(row.cpu)}</TableCell>
+                            <TableCell className="tableL" >{row.gpu}{ProductModal(row.gpu)}</TableCell>
+                            <TableCell className="tableL" >{row.board}{ProductModal(row.board)}</TableCell>
+                            <TableCell className="tableL" >{row.ram}{ProductModal(row.ram)}</TableCell>
+                            <TableCell className="tableL" >{row.ssd}{ProductModal(row.ssd)}</TableCell>
+                            <TableCell className="tableL" >{row.power}{ProductModal(row.power)}</TableCell>
+                            <TableCell className="tableL" >{row.fan}{ProductModal(row.fan)}</TableCell>
+                            <TableCell className="tableL" >{row.computerCase}{ProductModal(row.computerCase)}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

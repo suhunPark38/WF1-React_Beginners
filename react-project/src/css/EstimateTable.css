@@ -3,21 +3,36 @@
   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
 
 
-.header {
-  background-color:  #2196f3 !important;
-  border-radius: 30px;
+.table {
+
+  font-family:  Source Code Pro,'Jua', sans-serif !important;
+  font-size: 20px !important;
+
+  text-align: center;
+
+
+}
+
+.table_type {
+
+  font-family:  Source Code Pro,'Jua', sans-serif !important;
+  font-size: 20px !important;
 
 
 
 
 }
 
-.tabLabel {
-  color: white !important;
+.tableL {
+
   font-family:  Source Code Pro,'Jua', sans-serif !important;
   font-size: 16px !important;
 
+  text-align: left;
+
 
 }
+
+
 
 

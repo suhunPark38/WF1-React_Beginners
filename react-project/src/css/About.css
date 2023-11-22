@@ -1,44 +1,72 @@
-.box1{
-    height: 50vh !important;
-    width: 30% !important;
 
-    background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
 
-    position: relative;
+  @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
-    left: 5%;
-    top: 20%;
+.box1 {
+margin-top: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 50vh !important;
+      width: 30% !important;
 
+      background-color: #fff;
+
+      position: relative;
+
+      left: 5%;
+      top: 20%;
 }
 
-.box2{
-    height: 30vh !important;
-    width: 30% !important;
+.box2 {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 30vh !important;
+      width: 30% !important;
 
-    background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
+      background-color: #fff;
 
-    position: relative;
+      position: relative;
 
-    left: 5%;
-    top: 80%;
-
+      left: 5%;
+      top: 80%;
 }
-
 
 .box3 {
+  background-color: #d5d5d5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 80vh !important;
+    width: 55% !important;
+
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    right : 5%;
+}
+
+.box1, .box2, .box3 {
+  font-family: 'Jua', sans-serif;
+}
 
 
-  height: 75vh !important;
-  width: 55% !important;
+li {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
 
-  background-color: #fff; /* 페이지 내용 영역 배경색 설정 */
+p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
 
-  position: absolute;
-  top: 10%;
-  right : 5%;
+@media screen and (max-height: 900px) {
+  .box3 {
+    width: 100vh !important;
 
-
-
-
-
+  }
 }
