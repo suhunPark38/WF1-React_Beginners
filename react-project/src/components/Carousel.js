@@ -13,6 +13,7 @@ import "../css/carousel.css";
 const Carousel = () => {
 
 
+
     const resetSelectedOptions = Array(9).fill('');
     const sliderRef = useRef(null);
     const [activeStep, setActiveStep] = useState(0);
@@ -257,6 +258,7 @@ const Carousel = () => {
         <div>
             {/* 세로로 표시되는 스테퍼 */}
             <StepStepper activeStep={activeStep} items={items}/>
+
 
             {/* 이미지 및 설명이 표시되는 슬라이더 */}
             <Slider ref={sliderRef} {...settings}>

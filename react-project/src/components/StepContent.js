@@ -1,6 +1,5 @@
 import React from 'react';
 import RenderRadioGroup from './RenderRadioGroup';
-import ProgressBar from './ProgressBar';
 import CompleteTable from './CompleteTable';
 import products from "../data/products";
 
@@ -54,6 +53,7 @@ const StepContent = ({
         </div>
     );
 
+
     // 선택된 값 렌더링
     const renderSelectedValues = () => {
         const selectedProducts = products.filter(product => selectedRadioGroups.includes(product.name));
@@ -70,6 +70,7 @@ const StepContent = ({
             ))}
         </div>
     );
+
 
     return (
 
@@ -91,6 +92,7 @@ const StepContent = ({
                 {index === 12 && renderSelectedValues()}
             </div>
         </Paper>
+
 
     );
 };
