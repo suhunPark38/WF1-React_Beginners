@@ -90,77 +90,6 @@ const products = [
 
     {type: '쿨러', name:'기본 쿨러', performance: 10, price: 10, detail: '기본으로 제공되는 쿨러입니다.',image: '/images/기본 쿨러.jpg'},
 
-    { type: '메인보드', name: 'ASUS PRIME A320M-K',performance:150 , price: 65000, manufacturer:'ASUS', release:'2017.05',
-
-    detail:
-    `
-    제조회사        ASUS PRIME        
-    등록년월        2017년 05월
-
-    기본 사양
-    제품 분류        AMD CPU용        
-    CPU 소켓         AMD(소켓AM4)
-    세부 칩셋        AMD A320        
-    CPU 장착수        1개
-    폼팩터        M-ATX (22.6x22.1cm)        
-    전원부        6페이즈
-
-    메모리
-    메모리 종류        DDR4        
-    메모리 속도        PC4-25600 (3,200MHz)(OC)
-    메모리 슬롯        2개        
-    메모리 채널        듀얼
-    메모리 용량        최대 32GB
-
-    PCIe버전
-    PCIe        ○
-
-    PCIe슬롯
-    PCIex16        1개        
-    PCIex1        2개
-
-    저장장치        
-    저장장치        M.2        1개
-    SATA3        4개
-
-    M.2 연결
-    PCIe        ○        
-    NVMe        ○
-    SATA        ○
-
-    M.2 폼팩터
-    2242        ○        
-    2260        ○
-    2280        ○
-
-    그래픽 출력
-    D-SUB        ○        
-    HDMI        ○
-
-    후면단자
-    USB 3.0        ○        
-    USB 2.0        ○
-    RJ-45        ○        
-    오디오잭        ○
-    PS/2        ○
-
-    USB 3.0        후면 4개 
-    USB 2.0        후면 2개
-
-    네트워크
-    유선랜 칩셋        Realtek RTL8111H        
-    유선랜 속도        기가비트
-    RJ-45        1개
-
-    오디오
-    오디오 칩셋        Realtek ALC887        
-    아날로그 출력        7.1채널(8ch)
-
-    특징
-    UEFI        ○
-    유통회사        대원CTS
-
-    `, image: '/images/ASUS PRIME A320M-K.png'},
     { type: '램', name: '삼성전자 DDR4-3200 (4GB)',performance: 15 , price: 15000, manufacturer:'삼성전자', release:'2021.08',
     detail:
     `
@@ -408,7 +337,7 @@ const products = [
     두께        2.2mm        
     무게        7g
     `, image: '/images/SSD 512GB ESSENCORE KLEVV C710 NVMe.jpg'},
-    { type: '파워', name: '잘만 ECOMAX 83+', performance: 50, price: 40000, manufacturer:'잘만', release:'2018.06',
+    { type: '파워', name: '잘만 ECOMAX 500 83+', performance: 50, price: 40000, manufacturer:'잘만', release:'2018.06',
     detail:`
     제조회사        잘만        
     등록년월        2018년 06월
@@ -488,7 +417,7 @@ const products = [
     CPU쿨러 장착        160mm
     `, image: '/images/darkFlash DK110.jpg'},
 
-    { type: 'CPU', name: '인텔 코어 i3-13세대 13100 (랩터레이크)', performance: 30, price: 180000, manufacturer:'인텔', release:'2021.04',
+    { type: 'CPU', name: '인텔 코어 i3-13세대 13100 (랩터레이크)', performance: 30, price: 150000, manufacturer:'인텔', release:'2021.04',
     detail:`
     제조회사        인텔        
     등록년월        2023년 01월
@@ -527,92 +456,7 @@ const products = [
     패키지 형태        정품        
     쿨러        인텔 기본쿨러 포함
     `, image: '/images/인텔® 코어™ i3-13100 프로세서.jpg'},
-    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 40, price: 100000, manufacturer:'ASUS', release:'2022.01',
-    detail:`
-    제조회사        ASUS         
-    등록년월        2022년 01월
 
-    기본 사양
-    제품 분류        인텔 CPU용        
-    CPU 소켓        인텔(소켓1700)
-    세부 칩셋        인텔 H610        
-    CPU 장착수        1개
-    폼팩터        M-ATX (23.4x20.3cm)
-
-    메모리
-    메모리 종류        DDR4        
-    메모리 속도        3200MHz (PC4-25600)
-    메모리 슬롯        2개        
-    메모리 채널        듀얼
-    메모리 용량        최대 64GB
-
-    메모리 기술
-    XMP        ○        
-    옵테인        ○
-
-    확장슬롯
-    VGA 연결        PCIe4.0 x16
-
-    PCIe버전
-    PCIe4.0        ○        
-    PCIe3.0        ○
-    PCIe        ○
-
-    PCIe슬롯
-    PCIex16        1개        
-    PCIex1        1개
-
-    저장장치인터페이스
-    M.2        ○        
-    SATA3(6Gb/s)        ○
-    M.2        1개        
-    SATA3        4개
-
-    M.2 연결
-    PCIe        ○       
-    NVMe        ○
-    SATA        ○
-
-    M.2 폼팩터
-    2242        ○        
-    2260        ○
-    2280        ○
-    그래픽 출력
-
-    D-SUB        ○        
-    HDMI        ○
-
-    후면단자
-    USB 3.0        ○        
-    USB 2.0        ○
-    RJ-45        ○        
-    오디오잭        ○
-    PS/2        ○
-
-    USB 3.0        후면 2개        
-    USB 2.0        후면 4개
-    네트워크
-    유선랜 칩셋        Realtek 1Gb        
-    유선랜 속도        기가비트
-    RJ-45        1개
-
-    오디오
-    오디오 칩셋        Realtek        
-    아날로그 출력        7.1채널(8ch)
-
-    I/O 헤더
-    USB 3.0 헤더        ○       
-     USB 2.0 헤더        ○
-    RGB 12V 4핀 헤더        ○        
-    TPM 헤더        ○
-    RGB 4핀        1개        
-    시스템팬 4핀        1개
-    USB2.0 헤더        1개        
-    USB3.0 헤더        1개
-
-    특징
-    UEFI        ○
-    `, image: '/images/ASUS PRIME H610M-K D4 인텍앤컴퍼니.jpg'},
     { type: '램', name: '삼성전자 DDR4-3200 (8GB) x2', performance: 50, price: 40000, manufacturer:'삼성전자', release:'2020.06',
     detail:`
     제조회사        삼성전자         
@@ -744,7 +588,7 @@ const products = [
 //사무용
 
 
-    { type: 'CPU', name: '인텔 코어i3-13세대 13100F (랩터레이크)', performance: 28, price: 149000, manufacturer:'인텔', release:'2023.01',
+    { type: 'CPU', name: '인텔 코어i3-13세대 13100F (랩터레이크)', performance: 35, price: 149000, manufacturer:'인텔', release:'2023.01',
     detail:`
     제조회사        인텔        
     등록년월        2023년 01월
@@ -831,7 +675,7 @@ const products = [
     추가 구성
     백플레이트        O
     `, image: '/images/MSI 지포스 RTX 3050 벤투스 2X XS OC D6 8GB.jpg'},
-    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 50, price: 97000, manufacturer:'ASUS', release:'2022.01',
+    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 50, price: 80000, manufacturer:'ASUS', release:'2022.01',
     detail:`
     제조회사        ASUS        
     등록년월        2022년 01월
@@ -1709,59 +1553,7 @@ const products = [
     두께        2.38mm        
     무게        9g
     `, image: '/images/삼성전자 980 PRO M.2 NVMe (1TB).jpg'},
-    { type: '파워', name: '마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 130, price: 81000, manufacturer:'마이크로닉스', release:'2021.04',
-    detail:`
-    제조회사        마이크로닉스        
-    등록년월        2021년 04월
-    제품 분류        ATX 파워        
-    정격출력        700W
-    80PLUS인증        80 PLUS 브론즈        
-    ETA인증        BRONZE
-    LAMBDA인증        STANDARD        
-    전압변동        ±0.3%
-    +12V 출력방식        +12V 싱글레일        
-    +12V 가용률        100%
-    PFC회로        액티브PFC        
-    PF(역률)        99%
-    쿨링팬 크기        120mm 팬        
-    쿨링팬 개수        1개(팬)
-    베어링        LLS(Sleeve)        
-    깊이        140mm
-    A/S 보증기간        무상 7년
 
-    DC 출력
-    +3.3V 출력        22A        
-    +5V 출력        22A
-    +12V 출력        58.3A        
-    -12V 출력        0.3A
-    +5Vsb 출력        3.0A
-
-    [커넥터]
-    케이블연결        케이블일체형        
-    메인전원        24핀(20+4)
-    보조전원        8+4+4핀 1개        
-    PCIe 16핀(12+4)        12VHPWR 1개
-    PCIe 8핀(6+2)        2개        
-    SATA        6개
-    IDE 4핀        4개
-
-    부가기능
-    팬리스모드        O        
-    자동 팬 조절        O
-    대기전력 1W 미만        O        
-    플랫케이블        O
-
-    내부설계
-    105도 콘덴서        O        
-    DC to DC 설계        O
-
-    보호회로
-    과전압(OVP)        O        
-    저전압(UVP)        O
-    과전력(OPP)        O        
-    과열(OTP/OHP)        O
-    단락(SCP)        O
-            `, image: '/images/마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU.jpg'},
     { type: '케이스', name: '앱코 NCORE G30 트루포스 (블랙)', performance: 40, price: 47000, manufacturer:'앱코', release:'2021.07',
     detail:`
     제조회사        앱코        
@@ -2057,7 +1849,7 @@ const products = [
     두께        3.8mm        
     무게        최대 5.4g
     `, image: '/images/HP EX950 M.2 2280(512).png'},
-    { type: '파워', name: ' 마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 130, price: 80000, manufacturer:'마이크로닉스', release:'2021.04',
+    { type: '파워', name: '마이크로닉스 Classic II 풀체인지 700W 80PLUS BRONZE 230V EU', performance: 130, price: 80000, manufacturer:'마이크로닉스', release:'2021.04',
     detail:`
     제조회사        마이크로닉스        
     등록년월        2021년 04월
