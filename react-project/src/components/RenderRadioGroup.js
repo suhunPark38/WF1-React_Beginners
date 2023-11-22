@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from "@mui/material/Modal";
 import { Paper, Button, Typography, Radio, RadioGroup, FormControlLabel } from '@mui/material';
 import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
+import ProductInformArray from './ProductInformArray'
 
 const styles = {
   container: {
@@ -14,7 +15,7 @@ const styles = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 1200,
     bgcolor: 'background.paper',
     boxShadow: 24,
     p: 4,
@@ -30,9 +31,8 @@ const styles = {
 const ModalContent = ({ content, onClose, getProductDetails }) => (
   <div style={styles.modalContainer}>
     <Paper>
-      <Typography variant="h2">안녕하세요!</Typography>
-      {content && <p>{content}</p>}
-      {content && <p>{getProductDetails(content)}</p>}
+      <Typography variant="h4">{content}</Typography>
+      {ProductInformArray(getProductDetails(content))}
       <Button onClick={onClose}>닫기</Button>
     </Paper>
   </div>
@@ -50,7 +50,7 @@ const RenderRadioGroup = (props) => {
 
   const getProductDetails = (productName) => {
     const product = products.find((product) => product.name === productName);
-    return product ? product.detail : '세부 정보를 찾을 수 없습니다.';
+    return (product ? product : '세부 정보를 찾을 수 없습니다.');
   };
 
   return (
@@ -76,9 +76,9 @@ const RenderRadioGroup = (props) => {
         ))}
       </RadioGroup>
 
-      <Modal open={isModalOpen} onClose={handleToggleModal}>
-        <ModalContent content={modalContent} onClose={handleToggleModal} getProductDetails={getProductDetails} />
-      </Modal>
+      {<Modal open={isModalOpen} onClose={handleToggleModal}>
+        <ModalContent content={modalContent} onClose={handleToggleModal} getProductDetails={getProductDetails}/>
+      </Modal>}
     </div>
   );
 };
