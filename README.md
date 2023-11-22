@@ -12,3 +12,12 @@ npm install
 npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 
 npm install react-slick slick-carousel
+
+npm install @react-pdf/renderer
+
+npm install file-saver
+
+npm install react-router-dom
+
+피어 의존성 문제로 인해 설치가 안 될 경우 --legacy-peer-deps 추가 후 설치
+

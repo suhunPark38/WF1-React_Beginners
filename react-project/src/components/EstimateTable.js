@@ -8,8 +8,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ProductModal from "./ProductModal";
-import EstimateModal from "./EstimateModal";
 import products from "../data/products"
+import Button from '@mui/material/Button';
+import DownloadIcon from '@mui/icons-material/Download';
+import {saveAs} from 'file-saver';
 
 import '../css/EstimateTable.css';
 
@@ -37,6 +39,11 @@ const getTotalPerformance = (row) => (
         + products.find((product)=>(product.name === row.computerCase)).performance
 )
 
+const arrayToFile= data=> {
+    const file = new Blob([JSON.stringify(data)],{type: 'text/plain;charset=utf-8'});
+    saveAs(file, "컴퓨터 견본 견적.txt");
+}
+
 const EstimateTable = ()=> (
         <TableContainer component={Paper}>
             <Table>
@@ -61,7 +68,9 @@ const EstimateTable = ()=> (
                         >
                             <TableCell className="table_type" component="th" scope="row">
                                 {row.type}
-                                {EstimateModal(row.type, getTotalPrice(row), getTotalPerformance(row))}
+                                <p>{"총 가격: "+getTotalPrice(row)}</p>
+                                <p>{"총 성능: "+getTotalPerformance(row)}</p>
+                                <Button onClick={()=>arrayToFile(row)}> <DownloadIcon/></Button>
                             </TableCell>
                             <TableCell className="tableL" >{row.cpu}{ProductModal(row.cpu)}</TableCell>
                             <TableCell className="tableL" >{row.gpu}{ProductModal(row.gpu)}</TableCell>

@@ -337,7 +337,7 @@ const products = [
     두께        2.2mm        
     무게        7g
     `, image: '/images/SSD 512GB ESSENCORE KLEVV C710 NVMe.jpg'},
-    { type: '파워', name: '잘만 ECOMAX 83+', performance: 50, price: 40000, manufacturer:'잘만', release:'2018.06',
+    { type: '파워', name: '잘만 ECOMAX 500 83+', performance: 50, price: 40000, manufacturer:'잘만', release:'2018.06',
     detail:`
     제조회사        잘만        
     등록년월        2018년 06월
@@ -417,7 +417,7 @@ const products = [
     CPU쿨러 장착        160mm
     `, image: '/images/darkFlash DK110.jpg'},
 
-    { type: 'CPU', name: '인텔 코어 i3-13세대 13100 (랩터레이크)', performance: 30, price: 180000, manufacturer:'인텔', release:'2021.04',
+    { type: 'CPU', name: '인텔 코어 i3-13세대 13100 (랩터레이크)', performance: 30, price: 150000, manufacturer:'인텔', release:'2021.04',
     detail:`
     제조회사        인텔        
     등록년월        2023년 01월
@@ -588,7 +588,7 @@ const products = [
 //사무용
 
 
-    { type: 'CPU', name: '인텔 코어i3-13세대 13100F (랩터레이크)', performance: 28, price: 149000, manufacturer:'인텔', release:'2023.01',
+    { type: 'CPU', name: '인텔 코어i3-13세대 13100F (랩터레이크)', performance: 35, price: 149000, manufacturer:'인텔', release:'2023.01',
     detail:`
     제조회사        인텔        
     등록년월        2023년 01월
@@ -675,7 +675,7 @@ const products = [
     추가 구성
     백플레이트        O
     `, image: '/images/MSI 지포스 RTX 3050 벤투스 2X XS OC D6 8GB.jpg'},
-    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 50, price: 97000, manufacturer:'ASUS', release:'2022.01',
+    { type: '메인보드', name: 'ASUS PRIME H610M-K D4 인텍앤컴퍼니', performance: 50, price: 80000, manufacturer:'ASUS', release:'2022.01',
     detail:`
     제조회사        ASUS        
     등록년월        2022년 01월

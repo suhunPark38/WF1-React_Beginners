@@ -9,6 +9,7 @@
 
 
 
+
   .paper {
     text-align: center;
     height: 60vh;
@@ -23,6 +24,7 @@
 
 
   }
+
 
   @media screen and (max-height: 700px) {
     .paper {
