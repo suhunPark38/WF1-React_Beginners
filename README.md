@@ -1,10 +1,15 @@
 # 웹 프레임워크1 '리액트 초보만' WF1-React_Beginners
 
-작업하기 전에 항상 git pull 해서 동기화하기.
+### 깃 레포지토리: https://github.com/suhunPark38/WF1-React_Beginners.git
 
-코드 꼬이면 그냥 삭제하고 'git clone https://github.com/suhunPark38/WF1-React_Beginners.git' 하는게 빠름
+### 팀원
+| 팀원 | 이름  | 학번      | 비고         |
+|----|-----|---------|------------|
+| 팀장 | 박수훈 | 1971321 | 프로젝트 계획 발표 |
+| 팀원 | 김기범 | 1971352 |            |
+| 팀원 | 김민규 | 1891144 | 프로젝트 최종 발표 |
+| 팀원 | 박태민 | 1971355 | 프로젝트 시연 영상 |
 
-<hr>
 
 ## 실행환경 설명 및 실행 방법
 npm install
